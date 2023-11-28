@@ -109,89 +109,35 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!--
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      -->
-      <div class="container">
-      <table width="1000" border="0" align="center">
-          <tbody>
-              <tr>
-                  <div id="imageCarousel" class="carousel slide teaser-carousel" data-ride="carousel" data-interval="5000">
-                      <div class="carousel-inner">
-                          <!-- Cat in the sun -->
-                          <div class="carousel-item active">
-                              <div>
-                                  <video id="teaser" autoplay muted loop playsinline height="100%">
-                                    <source src="./static/videos/cat-in-the-sun/cat-in-the-sun.gif"
-                                      type="video/gif">
-                                  </video>
-                                  <span style="font-size: 150%;"> </span>
-                                  <video id="teaser" autoplay muted loop playsinline height="100%">
-                                    <source src="./static/videos/cat-in-the-sun/Ours.gif"
-                                      type="video/gif">
-                                  </video>
-                              </div>
-                              <div>
-                                  <div onclick="toggle_prompt('white-horse-pink', ['white-horse-bronze', 'white-horse-robot'], 'white-horse-result')" class="caption caption-active" id="white-horse-pink">"a photo of a pink toy horse on the beach"</div>
-                              </div>
-                          </div>
-                          <!-- Cat flower -->
-                          <div class="carousel-item active">
-                              <div>
-                                  <video id="teaser" autoplay muted loop playsinline height="100%">
-                                    <source src="./static/videos/cat-flower/cat.gif"
-                                      type="video/gif">
-                                  </video>
-                                  <span style="font-size: 150%;"> </span>
-                                  <video id="teaser" autoplay muted loop playsinline height="100%">
-                                    <source src="./static/videos/cat-flower/Ours.gif"
-                                      type="video/gif">
-                                  </video>
-                              </div>
-                              <div>
-                                  <div onclick="toggle_prompt('white-horse-pink', ['white-horse-bronze', 'white-horse-robot'], 'white-horse-result')" class="caption caption-active" id="white-horse-pink">"a photo of a pink toy horse on the beach"</div>
-                              </div>
-                          </div>
-
-                      </div>
-                      <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
-                          <div class="slider-navigation-previous">
-                              <svg viewBox="0 0 50 80" xml:space="preserve">
-                                  <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
-                                      stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 ">
-                                  </polyline>
-                              </svg>
-                          </div>
-                          <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
-                          <div class="slider-navigation-next">
-                              <svg viewBox="0 0 50 80" xml:space="preserve">
-                                  <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
-                                      stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 ">
-                                  </polyline>
-                              </svg>
-                          </div>
-                          <span class="sr-only">Next</span>
-                      </a>
-                  </div>
-              </tr>
-              <tr> <br /> </tr>
-              <tr align="center"></tr>
-          </tbody>
-      </table>
-
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-cat-sun">
+          <video poster="" id="cat-sun" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/cat-in-the-sun/cat-in-the-sun.gif"
+                    type="video/gif">
+          </video>
+        </div>
+        <div class="item item-pikachu-sun">
+          <video poster="" id="pikachu-sun" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/cat-in-the-sun/Ours.gif"
+                    type="video/gif">
+          </video>
+        </div>
+        <div class="item item-cat-flower">
+          <video poster="" id="cat-flower" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/cat-flower/cat.gif"
+                    type="video/gif">
+          </video>
+        </div>
+        <div class="item item-dog-flower">
+          <video poster="" id="dog-flower" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/cat-flower/Ours.gif"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
   </div>
 </section>
