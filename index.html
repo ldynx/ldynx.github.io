@@ -47,7 +47,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">SAVE: Protagonist Diversification with <span class="underline-text">S<\span>tructure <span class="underline-text">A<\span>gnostic <span class="underline-text">V<\span>ideo <span class="underline-text">E<\span>diting</h1>
+          <h1 class="title is-1 publication-title">SAVE: Protagonist Diversification with <span class="underline-text">S</span>tructure <span class="underline-text">A</span>gnostic <span class="underline-text">V</span>span>ideo <span class="underline-text">E</span>diting</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://keunhong.com">Yeji Song</a><sup>1</sup>,</span>
@@ -60,7 +60,7 @@
               Jeesoo Kim<sup>2</sup>,
             </span>
             <span class="author-block">
-              Nojun Kwak<sup>1</sup>,
+              Nojun Kwak<sup>1</sup>
             </span>
           </div>
 
@@ -73,7 +73,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://arxiv.org/pdf/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -82,7 +82,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/abs/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -92,7 +92,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/ldynx/"
+                <a href="https://github.com/ldynx/SAVE"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -125,8 +125,8 @@
   </div>
 </section>
 
-
 <section class="hero is-light is-small">
+  <--
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -181,6 +181,67 @@
       </div>
     </div>
   </div>
+  -->
+  <div class="container">
+      <table width="1000" border="0" align="center">
+          <tbody>
+              <tr>
+                  <div id="imageCarousel" class="carousel slide teaser-carousel" data-ride="carousel" data-interval="5000">
+                      <div class="carousel-inner">
+                          <!-- Cat in the sun -->
+                          <div class="carousel-item active">
+                              <div>
+                                  <img class="teaser-img" src="static/videos/cat-in-the-sun/cat-in-the-sun.gif" />
+                                  <span style="font-size: 150%;"> </span>
+                                  <img class="teaser-img" src="static/videos/cat-in-the-sun/Ours.gif" />
+                              </div>
+                              <div>
+                                  <div onclick="toggle_prompt('white-horse-pink', ['white-horse-bronze', 'white-horse-robot'], 'white-horse-result')" class="caption caption-active" id="white-horse-pink">"a photo of a pink toy horse on the beach"</div>
+                              </div>
+                          </div>
+                          <!-- Cat flower -->
+                          <div class="carousel-item active">
+                              <div>
+                                  <img class="teaser-img" src="./sm/assets/our_results/white_horse/horse.jpg" />
+                                  <span style="font-size: 150%;">→</span>
+                                  <img id="white-horse-result" class="teaser-img" src="./sm/assets/our_results/white_horse/pink_horse.jpg" />
+                              </div>
+                              <div>
+                                  <div onclick="toggle_prompt('white-horse-pink', ['white-horse-bronze', 'white-horse-robot'], 'white-horse-result')" class="caption caption-active" id="white-horse-pink">"a photo of a pink toy horse on the beach"</div>
+                              </div>
+                          </div>
+
+                      </div>
+                      <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                          <div class="slider-navigation-previous">
+                              <svg viewBox="0 0 50 80" xml:space="preserve">
+                                  <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
+                                      stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 ">
+                                  </polyline>
+                              </svg>
+                          </div>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                          <div class="slider-navigation-next">
+                              <svg viewBox="0 0 50 80" xml:space="preserve">
+                                  <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
+                                      stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 ">
+                                  </polyline>
+                              </svg>
+                          </div>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </tr>
+              <tr> <br /> </tr>
+              <tr>
+                  <td style="text-align: left; width: 17%"><i>*Equal contribution.</i></td>
+              </tr>
+              <tr align="center"></tr>
+          </tbody>
+      </table>
+                          
 </section>
 
 
