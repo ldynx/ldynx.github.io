@@ -150,31 +150,23 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            We adopt motion personalization that isolates the motion from a single source video and 
+            then modifies the protagonist accordingly.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            We spot the bias problem in the existing video editing method that restricts the range of 
+            choices for the new protagonist and attempt to address this issue using the conventional 
+            image-level personalization method. We adopt motion personalization that isolates the motion 
+            from a single source video and then modifies the protagonist accordingly.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            To deal with the natural discrepancy between image and video, we propose a motion word with 
+            an inflated textual embedding to properly represent the motion in a source video. We also 
+            regulate the motion word to attend to proper motion-related areas by introducing a novel pseudo 
+            optical flow, efficiently computed from the pre-calculated attention maps. Finally, we decouple 
+            the motion from the appearance of the source video with an additional pseudo word. Extensive 
+            experiments demonstrate the editing capability of our method, taking a step toward more diverse 
+            and extensive video editing.
           </p>
         </div>
       </div>
