@@ -161,17 +161,17 @@
             the existing video editing method that restricts the range
             of choices for the new protagonist and attempt to address
             this issue using the conventional image-level personalization method. 
-            <span style=" background: linear-gradient(to top, #FDC467 50%, transparent 50%)">We adopt 
+            <span style=" background: linear-gradient(to top, #FEDF04 50%, transparent 50%)">We adopt 
             motion personalization that isolates the motion from a single source video and then modifies the
             protagonist accordingly.</span> To deal with the natural discrepancy 
             between image and video, we propose a motion word
-            with an <span style=" background: linear-gradient(to top, #4A7ECA 50%, transparent 50%)">inflated textual embedding<sup>1</sup></span> 
+            with an <span style=" background: linear-gradient(to top, #D7E5F1 50%, transparent 50%)">inflated textual embedding<sup>1</sup></span> 
             to properly represent the motion in a source video. We also regulate the motion word
             to attend to proper motion-related areas by introducing a
-            <span style=" background: linear-gradient(to top, #4A7ECA 50%, transparent 50%)">novel pseudo optical flow<sup>2</sup></span>,
+            <span style=" background: linear-gradient(to top, #D7E5F1 50%, transparent 50%)">novel pseudo optical flow<sup>2</sup></span>,
             efficiently computed from the pre-calculated attention maps. Finally, we decouple the motion
             from the appearance of the source video with an 
-            <span style=" background: linear-gradient(to top, #4A7ECA 50%, transparent 50%)">additional pseudo word<sup>3</sup></span>. 
+            <span style=" background: linear-gradient(to top, #D7E5F1 50%, transparent 50%)">additional pseudo word<sup>3</sup></span>. 
             Extensive experiments demonstrate the editing capability of our method, 
             taking a step toward more diverse and extensive video editing.
           </p>
@@ -194,8 +194,8 @@
           <p>
             we expand the textual embedding space of a motion word to represent a time 
             flow in videos rather than a frozen moment in images: we add a temporal axis to an embedding space
-            of our new motion word <span style="font-family: 'Courier New';">S<sub>mot</sub></span> and 
-            let <span style="font-family: 'Courier New';">S<sub>mot</sub></span> inject its information into a proper region in each frame.
+            of our new motion word <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span> and 
+            let <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span> inject its information into a proper region in each frame.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/dollyzoom-stacked.mp4"
@@ -211,8 +211,15 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              Our intuition lies on that if the <span style="font-family: 'Cambria Math';">k</span>-th pixel of the 
+              <span style="font-family: 'Cambria Math';">i</span>-th frame and the 
+              <span style="font-family: 'Cambria Math';">l</span>-th pixel of the 
+              <span style="font-family: 'Cambria Math';">j</span>-th frame 
+              have a high spatio-temporal attention score, then they tend to be the same semantic point at different frames. 
+              Therefore, by tracking down spatial locations of these similar points across frames, we can estimate the
+              temporal flow of each pixel in the video. We introduce a novel pseudo optical flow to represent better 
+              the moving area without using the costly optical flow models and enabling <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span>
+              to focus on the movement.
             </p>
             <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/matting.mp4"
