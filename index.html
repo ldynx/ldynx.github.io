@@ -161,17 +161,17 @@
             the existing video editing method that restricts the range
             of choices for the new protagonist and attempt to address
             this issue using the conventional image-level personalization method. 
-            <span style=" background: linear-gradient(to top, #FDD835 50%, transparent 50%)">We adopt 
+            <span style=" background: linear-gradient(to top, #FDC467 50%, transparent 50%)">We adopt 
             motion personalization that isolates the motion from a single source video and then modifies the
             protagonist accordingly.</span> To deal with the natural discrepancy 
             between image and video, we propose a motion word
-            with an <span style=" background: linear-gradient(to top, #FF8A80 50%, transparent 50%)">inflated textual embedding<sup>1</sup></span> 
+            with an <span style=" background: linear-gradient(to top, #4A7ECA 50%, transparent 50%)">inflated textual embedding<sup>1</sup></span> 
             to properly represent the motion in a source video. We also regulate the motion word
             to attend to proper motion-related areas by introducing a
-            <span style=" background: linear-gradient(to top, #FF8A80 50%, transparent 50%)">novel pseudo optical flow<sup>2</sup></span>,
+            <span style=" background: linear-gradient(to top, #4A7ECA 50%, transparent 50%)">novel pseudo optical flow<sup>2</sup></span>,
             efficiently computed from the pre-calculated attention maps. Finally, we decouple the motion
             from the appearance of the source video with an 
-            <span style=" background: linear-gradient(to top, #FF8A80 50%, transparent 50%)">additional pseudo word<sup>3</sup></span>. 
+            <span style=" background: linear-gradient(to top, #4A7ECA 50%, transparent 50%)">additional pseudo word<sup>3</sup></span>. 
             Extensive experiments demonstrate the editing capability of our method, 
             taking a step toward more diverse and extensive video editing.
           </p>
@@ -192,8 +192,10 @@
         <div class="content">
           <h2 class="title is-3">Inflated Text Embedding<sup>1</sup></h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            we expand the textual embedding space of a motion word to represent a time 
+            flow in videos rather than a frozen moment in images: we add a temporal axis to an embedding space
+            of our new motion word <span style="font-family: 'Courier New';">S<sub>mot</sub></span> and 
+            let <span style="font-family: 'Courier New';">S<sub>mot</sub></span> inject its information into a proper region in each frame.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/dollyzoom-stacked.mp4"
@@ -228,7 +230,7 @@
       <!-- Protagonist Word. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Additional Protagonist Word<sup>3</sup></h2>
+          <h2 class="title is-3">Protagonist Word<sup>3</sup></h2>
           <p>
             Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
             would be impossible without nerfies since it would require going through a wall.
@@ -262,10 +264,10 @@
     <!--/ Our Method. -->
 
     
-    <!-- Animation. -->
+    <!-- Comparison -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Comparison</h2>
 
         <!-- Interpolating. -->
         <h3 class="title is-4">Interpolating states</h3>
@@ -324,7 +326,7 @@
 
       </div>
     </div>
-    <!--/ Animation. -->
+    <!--/ Comparison -->
 
 
     <!-- Concurrent Work. -->
