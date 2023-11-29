@@ -165,13 +165,13 @@
             motion personalization that isolates the motion from a single source video and then modifies the
             protagonist accordingly.</span> To deal with the natural discrepancy 
             between image and video, we propose a motion word
-            with an <span style=" background: linear-gradient(to top, #EF5350 50%, transparent 50%)">inflated textual embedding<sup>1</sup></span> 
+            with an <span style=" background: linear-gradient(to top, #FF8A80 50%, transparent 50%)">inflated textual embedding<sup>1</sup></span> 
             to properly represent the motion in a source video. We also regulate the motion word
             to attend to proper motion-related areas by introducing a
-            <span style=" background: linear-gradient(to top, #EF5350 50%, transparent 50%)">novel pseudo optical flow<sup>2</sup></span>,
+            <span style=" background: linear-gradient(to top, #FF8A80 50%, transparent 50%)">novel pseudo optical flow<sup>2</sup></span>,
             efficiently computed from the pre-calculated attention maps. Finally, we decouple the motion
-            from the appearance of the source video with an additional
-            <span style=" background: linear-gradient(to top, #EF5350 50%, transparent 50%)">pseudo word<sup>3</sup></span>. 
+            from the appearance of the source video with an 
+            <span style=" background: linear-gradient(to top, #FF8A80 50%, transparent 50%)">additional pseudo word<sup>3</sup></span>. 
             Extensive experiments demonstrate the editing capability of our method, 
             taking a step toward more diverse and extensive video editing.
           </p>
@@ -187,10 +187,10 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
+      <!-- Inflated Text Embedding. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Inflated Text Embedding<sup>1</sup></h2>
           <p>
             Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
             would be impossible without nerfies since it would require going through a wall.
@@ -201,11 +201,11 @@
           </video>
         </div>
       </div>
-      <!--/ Visual Effects. -->
+      <!--/ Inflated Text Embedding. -->
 
-      <!-- Matting. -->
+      <!-- Pseudo Optical Flow. -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <h2 class="title is-3">Pseudo Optical Flow<sup>2</sup></h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
@@ -220,9 +220,48 @@
 
         </div>
       </div>
+      <!--/ Pseudo Optical Flow. -->
     </div>
-    <!--/ Matting. -->
 
+    <div class="columns is-centered">
+
+      <!-- Protagonist Word. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Additional Protagonist Word<sup>3</sup></h2>
+          <p>
+            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+            would be impossible without nerfies since it would require going through a wall.
+          </p>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dollyzoom-stacked.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Protagonist Word. -->
+  
+      <!-- Our Method. -->
+      <div class="column">
+        <h2 class="title is-3">Our Method</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              As a byproduct of our method, we can also solve the matting problem by ignoring
+              samples that fall outside of a bounding box during rendering.
+            </p>
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/matting.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    <!--/ Our Method. -->
+
+    
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
