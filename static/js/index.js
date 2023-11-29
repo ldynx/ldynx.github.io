@@ -30,8 +30,8 @@ $(document).ready(function() {
     });
 
     var options = {
-			slidesToScroll: 3,
-			slidesToShow: 3,
+			slidesToScroll: 2,
+			slidesToShow: 2,
 			loop: true,
 			infinite: true,
 			autoplay: false,
