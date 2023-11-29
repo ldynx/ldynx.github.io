@@ -120,12 +120,14 @@
             <source src="./static/videos/cat_in_the_sun/Ours_Pikachu.mp4"
                     type="video/mp4">
           </video>
+          <!--
           <br />
           <div onclick="toggle_prompt('./static/videos/cat_in_the_sun/Ours_Pikachu.mp4', ['./static/videos/cat_in_the_sun/Ours_dog.mp4', './static/videos/cat_in_the_sun/Ours_tiger.mp4'], 'cat-sun-result')" class="caption caption-active" id="cat-sun-pikachu">"Pikachu is S<sub>mot</sub> in the grass in the sun"</div>
           <br />
           <div onclick="toggle_prompt('./static/videos/cat_in_the_sun/Ours_dog.mp4', ['./static/videos/cat_in_the_sun/Ours_Pikachu.mp4', './static/videos/cat_in_the_sun/Ours_tiger.mp4'], 'cat-sun-result')" class="caption" id="cat-sun-dog">"a dog is S<sub>mot</sub> in the grass in the sun"</div>
           <br />
           <div onclick="toggle_prompt('./static/videos/cat_in_the_sun/Ours_tiger.mp4', ['./static/videos/cat_in_the_sun/Ours_dog.mp4', './static/videos/cat_in_the_sun/Ours_Pikachu.mp4'], 'cat-sun-result')" class="caption" id="cat-sun-tiger">"a tiger is S<sub>mot</sub> in the grass in the sun"</div>
+          -->
         </div>
 
         <!--
@@ -193,14 +195,14 @@
       <!-- Inflated Text Embedding. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">Inflated Text Embedding<sup>1</sup></h2>
+          <h3 class="title is-4">Inflated Text Embedding<sup>1</sup></h3>
           <p>
             We expand the textual embedding space of a motion word to represent a time 
             flow in videos rather than a frozen moment in images: we add a temporal axis to an embedding space
             of our new motion word <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span> and 
             let <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span> inject its information into a proper region in each frame.
           </p>
-          <h2 class="title is-4">Pre-registration Strategy<sup>3</sup></h2>
+          <h3 class="title is-4">Pre-registration Strategy<sup>3</sup></h3>
           <p>
             The motion and the protagonist get easily entangled. To resolve this problem, we propose a two-stage
             training strategy to untangle the two properties. We newly define a pseudo-word
@@ -215,7 +217,7 @@
 
       <!-- Pseudo Optical Flow. -->
       <div class="column">
-        <h2 class="title is-4">Pseudo Optical Flow<sup>2</sup></h2>
+        <h3 class="title is-4">Pseudo Optical Flow<sup>2</sup></h3>
         <div class="columns is-centered">
           <div class="column content">
             <p>
@@ -253,28 +255,19 @@
             frame.
           </p>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
+        <div style="display: block;" id="comparison-video-div">
+          <video id="comparison-player1"  style="width: 49%" autoplay muted defaultMuted playsinline webkit-playsinline onended="">
+            <source id="comparison-src1" src="videos/car-turn/input.mp4" type="video/mp4">
+          </video>
+          <video id="comparison-player2"  style="width: 49%" autoplay muted defaultMuted playsinline webkit-playsinline  onended="loadComparison()">
+            <source id="comparison-src2" src="videos/car-turn/input.mp4" type="video/mp4">
+          </video>
         </div>
+        <div style="display: flex;flex-direction: row;">
+          <p id="comparison-caption" style="margin-top: 5px; text-align: center; width: 50%"></p>
+          <p style="margin-top: 5px; text-align: center; width: 50%;">Ours<br/><mark style="background: none; color: white">.</mark></p>
+        </div>
+
         <br/>
         <!--/ Interpolating. -->
 
