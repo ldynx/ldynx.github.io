@@ -115,19 +115,24 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <!-- Cat-in-the-sun -->
-        <div class="item item-cat-sun">
-          <video poster="" id="cat-sun" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/cat_in_the_sun/cat.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="carousel-item">
+          <div>
+            <video poster="" id="pikachu-sun" autoplay controls muted loop playsinline height="90%">
+              <source src="./static/videos/cat_in_the_sun/Ours_Pikachu.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <br />
+          <div>
+              <div onclick="toggle_prompt('./static/videos/cat_in_the_sun/Ours_Pikachu.mp4', ['./static/videos/cat_in_the_sun/Ours_dog.mp4', './static/videos/cat_in_the_sun/Ours_tiger.mp4'], 'cat-sun-result')" class="caption caption-active" id="cat-sun-pikachu">"Pikachu is S<sub>mot</sub> in the grass in the sun"</div>
+              <br />
+              <div onclick="toggle_prompt('./static/videos/cat_in_the_sun/Ours_dog.mp4', ['./static/videos/cat_in_the_sun/Ours_Pikachu.mp4', './static/videos/cat_in_the_sun/Ours_tiger.mp4'], 'cat-sun-result')" class="caption" id="cat-sun-dog">"a dog is S<sub>mot</sub> in the grass in the sun"</div>
+              <br />
+              <div onclick="toggle_prompt('./static/videos/cat_in_the_sun/Ours_tiger.mp4', ['./static/videos/cat_in_the_sun/Ours_dog.mp4', './static/videos/cat_in_the_sun/Ours_Pikachu.mp4'], 'cat-sun-result')" class="caption" id="cat-sun-tiger">"a tiger is S<sub>mot</sub> in the grass in the sun"</div>
+          </div>
         </div>
-        <div class="item item-cat-flower">
-          <video poster="" id="pikachu-sun" autoplay controls muted loop playsinline height="90%">
-            <source src="./static/videos/cat_in_the_sun/Ours_Pikachu.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        
+
+        <!--
         <div class="item item-cat-flower">
           <video poster="" id="cat-flower" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/cat_flower/cat.mp4"
@@ -140,6 +145,7 @@
                     type="video/mp4">
           </video>
         </div>
+        -->
         
       </div>
     </div>
@@ -161,17 +167,17 @@
             the existing video editing method that restricts the range
             of choices for the new protagonist and attempt to address
             this issue using the conventional image-level personalization method. 
-            <span style=" background: linear-gradient(to top, #FEDF04 50%, transparent 50%)">We adopt 
+            <span style=" background: linear-gradient(to top, #F8D32D 50%, transparent 50%)">We adopt 
             motion personalization that isolates the motion from a single source video and then modifies the
             protagonist accordingly.</span> To deal with the natural discrepancy 
             between image and video, we propose a motion word
-            with an <span style=" background: linear-gradient(to top, #D7E5F1 50%, transparent 50%)">inflated textual embedding<sup>1</sup></span> 
+            with an <span style=" background: linear-gradient(to top, #67D1E1 50%, transparent 50%)">inflated textual embedding<sup>1</sup></span> 
             to properly represent the motion in a source video. We also regulate the motion word
             to attend to proper motion-related areas by introducing a
-            <span style=" background: linear-gradient(to top, #D7E5F1 50%, transparent 50%)">novel pseudo optical flow<sup>2</sup></span>,
+            <span style=" background: linear-gradient(to top, #67D1E1 50%, transparent 50%)">novel pseudo optical flow<sup>2</sup></span>,
             efficiently computed from the pre-calculated attention maps. Finally, we decouple the motion
             from the appearance of the source video with an 
-            <span style=" background: linear-gradient(to top, #D7E5F1 50%, transparent 50%)">additional pseudo word<sup>3</sup></span>. 
+            <span style=" background: linear-gradient(to top, #67D1E1 50%, transparent 50%)">additional pseudo word<sup>3</sup></span>. 
             Extensive experiments demonstrate the editing capability of our method, 
             taking a step toward more diverse and extensive video editing.
           </p>
