@@ -121,16 +121,18 @@
             <video poster="" id="cat-flower" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/cat_flower/cat.mp4"
                       type="video/mp4">
-            <figcaption>A cat is roaring</figcaption>
             </video>
+            <figcaption>A cat is roaring</figcaption>
           </figure>
         </div>
+        <span "style="font-weight:bold">→</span>
         <div class="item item-dog-sun">
           <figure>
             <video poster="" id="dog-flower" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/cat_flower/Ours_dog.mp4"
                       type="video/mp4">
             </video>
+            <figcaption>A dog is roaring</figcaption>
           </figure>
         </div>
         <div class="item item-tiger-sun">
@@ -139,6 +141,7 @@
               <source src="./static/videos/cat_flower/Ours_tiger.mp4"
                       type="video/mp4">
             </video>
+            <figcaption>A tiger is roaring</figcaption>
           </figure>
         </div>
 
@@ -149,6 +152,7 @@
                     type="video/mp4">
           </video>
         </div>
+        <span "style="font-weight:bold">→</span>
         <div class="item item-cat-sun">
           <video poster="" id="dog-flower" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/cat_flower/Ours_dog.mp4"
@@ -278,6 +282,20 @@
           </p>
         </div>
         <div style="display: block;" id="comparison-video-div">
+          <figure>
+            <video id="comparison-player1"  style="width: 49%" autoplay muted defaultMuted playsinline webkit-playsinline onended="">
+              <source id="comparison-src1" src="./static/videos/cat_flower/cat.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <video id="comparison-player2"  style="width: 49%" autoplay muted defaultMuted playsinline webkit-playsinline  onended="loadComparison()">
+            <source id="comparison-src2" src="./static/videos/cat_in_the_sun/cat.mp4" type="video/mp4">
+          </video>
+          <video id="comparison-player1"  style="width: 49%" autoplay muted defaultMuted playsinline webkit-playsinline onended="">
+            <source id="comparison-src1" src="./static/videos/cat_flower/cat.mp4" type="video/mp4">
+          </video>
+          <video id="comparison-player2"  style="width: 49%" autoplay muted defaultMuted playsinline webkit-playsinline  onended="loadComparison()">
+            <source id="comparison-src2" src="./static/videos/cat_in_the_sun/cat.mp4" type="video/mp4">
+          </video>
           <video id="comparison-player1"  style="width: 49%" autoplay muted defaultMuted playsinline webkit-playsinline onended="">
             <source id="comparison-src1" src="./static/videos/cat_flower/cat.mp4" type="video/mp4">
           </video>
