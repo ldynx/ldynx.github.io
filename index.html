@@ -125,7 +125,7 @@
             <source src="./static/videos/cat_flower/cat.mp4"
                     type="video/mp4">
           </video>
-          <figcaption><p>Source: A <span class="underline-text">cat</span> is roaring</p></figcaption>
+          <figcaption><p>Source: A <span style="text-decoration: underline;">cat</span> is roaring</p></figcaption>
         </figure>
         </div>
         <div class="item item-dog-sun">
@@ -134,7 +134,7 @@
             <source src="./static/videos/cat_flower/Ours_dog.mp4"
                     type="video/mp4">
           </video>
-          <figcaption>Edit: A <span class="underline-text">dog</span> is roaring</figcaption>
+          <figcaption>Edit: A <span style="text-decoration: underline;">dog</span> is roaring</figcaption>
         </figure>
         </div>
         <div class="item item-tiger-sun">
@@ -143,7 +143,7 @@
             <source src="./static/videos/cat_flower/Ours_tiger.mp4"
                     type="video/mp4">
           </video>
-          <figcaption><p>Edit: A <span class="underline-text">tiger</span> is roaring</p></figcaption>
+          <figcaption><p>Edit: A <span style="text-decoration: underline;">tiger</span> is roaring</p></figcaption>
         </figure>
         </div>
 
@@ -154,7 +154,7 @@
               <source src="./static/videos/man-skiing/man-skiing.mp4"
                       type="video/mp4">
             </video>
-            <figcaption>Source: A <span class="underline-text">man</span> is skiing</figcaption>
+            <figcaption>Source: A <span style="text-decoration: underline;">man</span> is skiing</figcaption>
           </figure>
         </div>
         <div class="item item-bear-skiing">
@@ -163,7 +163,7 @@
               <source src="./static/videos/man-skiing/Ours_bear.mp4"
                       type="video/mp4">
             </video>
-            <figcaption>Edit: A <span class="underline-text">bear</span> is skiing</figcaption>
+            <figcaption>Edit: A <span style="text-decoration: underline;">bear</span> is skiing</figcaption>
           </figure>
         </div>
         <div class="item item-Mickey-skiing">
@@ -172,7 +172,7 @@
               <source src="./static/videos/man-skiing/Ours_Mickey-Mouse.mp4"
                       type="video/mp4">
             </video>
-            <figcaption>Edit: <span class="underline-text">Mickey-Mouse</span> is skiing</figcaption>
+            <figcaption>Edit: <span style="text-decoration: underline;">Mickey-Mouse</span> is skiing</figcaption>
           </figure>
         </div>
         
@@ -285,10 +285,10 @@
         <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
+            As our method effectively learns the motion of the original protagonist, it generates a new protagonist that reproduces
+            the motion in the source video seamlessly despite having a significantly different structure from that of the original one.
+            Meanwhile, other baselines commonly generate a new protagonist in the silhouette of the original protagonist in the source video
+            and miss the mouth movements.
         </div>
         <figure>
           <video poster="" id="comp-flower" autoplay controls muted loop playsinline height="40%">
@@ -305,8 +305,12 @@
         <h3 class="title is-4">Re-rendering the input video</h3>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            Our method also effectively reflects the editing prompts compared to other baselines. Baseline methods are unable to overcome
+            the discrepancy between an original and a new protagonist in the structure and generate an editied video where certain segments maintain 
+            the original protagonist's appearance. On the other hand, our method disentangles the appearance and the motion with separate
+            <span style="font-family: 'Cambria Math';">S<sub>pro</sub></span> and <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span> and
+            renders the new protagonist doing <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span> from the text encoder from the start,
+            successfully applying the motion features to the new protagonist.
           </p>
         </div>
         <figure>
