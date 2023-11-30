@@ -5,6 +5,8 @@ body {
 figcaption {
   font-family: 'Hi Melody', sans-serif;
   font-size: 30px;
+  display: block;
+  margin: 10px auto;
 }
 
 .footer .icon-link {
