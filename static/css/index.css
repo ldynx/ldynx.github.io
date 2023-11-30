@@ -2,6 +2,9 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+caption {
+  font-family: 'Hi Melody', sans-serif;
+}
 
 .footer .icon-link {
     font-size: 25px;
