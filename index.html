@@ -177,6 +177,7 @@
         </div>
 
         <!-- Man-surfing -->
+        <!--
         <div class="item item-man-surfing">
           <figure>
             <video poster="" id="man-surfing" autoplay controls muted loop playsinline height="70%">
@@ -204,6 +205,7 @@
             <figcaption>A <span style="color: rgb(188,223,237);">Edit:</span> <span style="text-decoration: underline;">raccoon</span> is surfing</figcaption>
           </figure>
         </div>
+        -->
         
       </div>
     </div>
@@ -299,7 +301,7 @@
               to focus on the movement.
             </p>
             <center>
-            <img src="./static/images/Method_motion_map.png" width="80%">
+            <img src="./static/images/Method_motion_map.png" width="100%">
             </center>
           </div>
 
@@ -313,14 +315,14 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Comparison</h2>
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <!-- Motion -->
+        <h3 class="title is-4">Motion reproduction in edited videos</h3>
         <div class="content has-text-justified">
           <p>
             As our method effectively learns the motion of the original protagonist, it generates a new protagonist that reproduces
             the motion in the source video seamlessly despite having a significantly different structure from that of the original one.
             Meanwhile, other baselines commonly generate a new protagonist in the silhouette of the original protagonist in the source video
-            and miss the mouth movements.
+            and miss the refined movements.
         </div>
         <figure>
           <div style="display: flex; flex-direction: row;">
@@ -334,7 +336,7 @@
             <source src="./static/videos/comparisons/cat-flower.mp4"
                   type="video/mp4">
           </video>
-          <figcaption><p style="font-size: 25px;">A <span style="text-decoration: line-through; color:black;">cat</span> <span style="color: rgb(211,47,47);">dog</span> is roaring</p></figcaption>
+          <figcaption><p style="font-size: 25px;">A <strike style="text-decoration-color: rgb(211,47,47);">cat</strike> <span style="color: rgb(211,47,47);">dog</span> is roaring</p></figcaption>
         </figure>
         <figure>
           <div style="display: flex; flex-direction: row;">
@@ -348,14 +350,14 @@
             <source src="./static/videos/comparisons/child-bike.mp4"
                   type="video/mp4">
           </video>
-          <figcaption><p style="font-size: 25px;">A <strike style="color: rgb(211,47,47);">child</strike> <span style="color: rgb(211,47,47);">monkey</span> is riding a bike on the road</p></figcaption>
+          <figcaption><p style="font-size: 25px;">A <strike style="text-decoration-color: rgb(211,47,47);">child</strike> <span style="color: rgb(211,47,47);">monkey</span> is riding a bike on the road</p></figcaption>
         </figure>
 
         <br/>
-        <!--/ Interpolating. -->
+        <!--/ Motion -->
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+        <!-- Appearance -->
+        <h3 class="title is-4">Natural appearance of edited protagonists</h3>
         <div class="content has-text-justified">
           <p>
             Our method also effectively reflects the editing prompts compared to other baselines. Baseline methods are unable to overcome
@@ -379,7 +381,7 @@
             <source src="./static/videos/comparisons/cat-in-the-sun.mp4"
                   type="video/mp4">
           </video>
-          <figcaption><p style="font-size: 25px;">A <span style="text-decoration: line-through; color:black;">cat</span> <span style="color: rgb(211,47,47);">Pikachu</span> is sleeping in the grass in the sun</p></figcaption>
+          <figcaption><p style="font-size: 25px;">A <strike style="text-decoration-color: rgb(211,47,47);">cat</strike> <span style="color: rgb(211,47,47);">Pikachu</span> is sleeping in the grass in the sun</p></figcaption>
         </figure>
         <figure>
           <div style="display: flex; flex-direction: row;">
@@ -393,9 +395,9 @@
             <source src="./static/videos/comparisons/man-skiing.mp4"
                   type="video/mp4">
           </video>
-          <figcaption><p style="font-size: 25px;">A <span style="text-decoration: line-through; color:black;">man</span> <span style="color: rgb(211,47,47);">tiger</span> is skiing</p></figcaption>
+          <figcaption><p style="font-size: 25px;">A <strike style="text-decoration-color: rgb(211,47,47);">man</strike> <span style="color: rgb(211,47,47);">tiger</span> is skiing</p></figcaption>
         </figure>
-        <!--/ Re-rendering. -->
+        <!--/ Appearance -->
 
       </div>
     </div>
