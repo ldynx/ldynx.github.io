@@ -175,6 +175,35 @@
             <figcaption><span style="color: rgb(188,223,237);">Edit:</span> <span style="text-decoration: underline;">Mickey-Mouse</span> is skiing</figcaption>
           </figure>
         </div>
+
+        <!-- Man-surfing -->
+        <div class="item item-man-surfing">
+          <figure>
+            <video poster="" id="man-surfing" autoplay controls muted loop playsinline height="70%">
+              <source src="./static/videos/man-surfing/man-skiing.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption><span style="color: rgb(248,211,45);">Source:</span> A <span style="text-decoration: underline;">man</span> is surfing</figcaption>
+          </figure>
+        </div>
+        <div class="item item-panda-surfing">
+          <figure>
+            <video poster="" id="panda-surfing" autoplay controls muted loop playsinline height="70%">
+              <source src="./static/videos/man-surfing/Ours_panda.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption><span style="color: rgb(188,223,237);">Edit:</span> A <span style="text-decoration: underline;">panda</span> is surfing</figcaption>
+          </figure>
+        </div>
+        <div class="item item-raccoon-surfing">
+          <figure>
+            <video poster="" id="raccoon-surfing" autoplay controls muted loop playsinline height="70%">
+              <source src="./static/videos/man-surfing/Ours_raccoon.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption>A <span style="color: rgb(188,223,237);">Edit:</span> <span style="text-decoration: underline;">raccoon</span> is surfing</figcaption>
+          </figure>
+        </div>
         
       </div>
     </div>
@@ -210,6 +239,9 @@
             Extensive experiments demonstrate the editing capability of our method, 
             taking a step toward more diverse and extensive video editing.
           </p>
+          <center>
+          <img src="./static/images/Method_pipeline.png" width="80%">
+          </center>
         </div>
       </div>
     </div>
@@ -293,16 +325,30 @@
         <figure>
           <div style="display: flex; flex-direction: row;">
             <p style="flex: 1; text-align: center;"> </p>
+            <p style="flex: 1; text-align: center;">Ours</p>
             <p style="flex: 1; text-align: center;">Tune-A-Video</p>
             <p style="flex: 1; text-align: center;">Video-P2P</p>
             <p style="flex: 1; text-align: center;">FateZero</p>
-            <p style="flex: 1; text-align: center;">Ours</p>
           </div>
           <video poster="" id="comp-flower" autoplay controls muted loop playsinline height="40%">
-            <source src="./static/videos/comparisons/dog-flower.mp4"
+            <source src="./static/videos/comparisons/cat-flower.mp4"
                   type="video/mp4">
           </video>
           <figcaption><p style="font-size: 25px;">A <span style="text-decoration: line-through; color:black; border-bottom: 1px solid rgb(211, 47, 47);">cat</span> <span style="color: rgb(211,47,47);">dog</span> is roaring</p></figcaption>
+        </figure>
+        <figure>
+          <div style="display: flex; flex-direction: row;">
+            <p style="flex: 1; text-align: center;"> </p>
+            <p style="flex: 1; text-align: center;">Ours</p>
+            <p style="flex: 1; text-align: center;">Tune-A-Video</p>
+            <p style="flex: 1; text-align: center;">Video-P2P</p>
+            <p style="flex: 1; text-align: center;">FateZero</p>
+          </div>
+          <video poster="" id="comp-skiing" autoplay controls muted loop playsinline height="40%">
+            <source src="./static/videos/comparisons/man-skiing.mp4"
+                  type="video/mp4">
+          </video>
+          <figcaption><p style="font-size: 25px;">A <span style="text-decoration: line-through; color:black; border-bottom: 12px solid rgb(211, 47, 47);">man</span> <span style="color: rgb(211,47,47);">tiger</span> is skiing</p></figcaption>
         </figure>
 
         <br/>
@@ -324,16 +370,30 @@
         <figure>
           <div style="display: flex; flex-direction: row;">
             <p style="flex: 1; text-align: center;"> </p>
+            <p style="flex: 1; text-align: center;">Ours</p>
             <p style="flex: 1; text-align: center;">Tune-A-Video</p>
             <p style="flex: 1; text-align: center;">Video-P2P</p>
             <p style="flex: 1; text-align: center;">FateZero</p>
-            <p style="flex: 1; text-align: center;">Ours</p>
           </div>
           <video poster="" id="comp-sun" autoplay controls muted loop playsinline height="40%">
-            <source src="./static/videos/comparisons/Pikachu-sun.mp4"
+            <source src="./static/videos/comparisons/cat-in-the-sun.mp4"
                   type="video/mp4">
           </video>
-          <figcaption><p style="font-size: 25px;">A <span style="text-decoration: line-through; color:black; border-bottom: 1px solid rgb(211, 47, 47);">cat</span> <span style="color: rgb(211,47,47);">Pikachu</span> is sleeping in the grass in the sun</p></figcaption>
+          <figcaption><p style="font-size: 25px;">A <span style="text-decoration: line-through; color:black; border-bottom: 12px solid rgb(211, 47, 47);">cat</span> <span style="color: rgb(211,47,47);">Pikachu</span> is sleeping in the grass in the sun</p></figcaption>
+        </figure>
+        <figure>
+          <div style="display: flex; flex-direction: row;">
+            <p style="flex: 1; text-align: center;"> </p>
+            <p style="flex: 1; text-align: center;">Ours</p>
+            <p style="flex: 1; text-align: center;">Tune-A-Video</p>
+            <p style="flex: 1; text-align: center;">Video-P2P</p>
+            <p style="flex: 1; text-align: center;">FateZero</p>
+          </div>
+          <video poster="" id="comp-bike" autoplay controls muted loop playsinline height="40%">
+            <source src="./static/videos/comparisons/child-bike.mp4"
+                  type="video/mp4">
+          </video>
+          <figcaption><p style="font-size: 25px;">A <span style="text-decoration: line-through; color:black; border-bottom: 12px solid rgb(211, 47, 47);">child</span> <span style="color: rgb(211,47,47);">monkey</span> is riding a bike on the road</p></figcaption>
         </figure>
         <!--/ Re-rendering. -->
 
