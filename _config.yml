@@ -9,7 +9,7 @@ version: 2
 # Personal info
 name: Yeji Song
 title: 
-email: ldynx@snu.ac.kr
+# email: ldynx@snu.ac.kr
 # email_title: Email (Email title override)
 # phone:  (optional)
 # phone_title: Phone (Phone title override)
@@ -27,7 +27,7 @@ github_username:  ldynx
 # facebook_username: jekyll
 # flickr_username: jekyll
 # instagram_username: jekyll
-linkedin_username: Yeji Song
+linkedin_username: yeji-song
 # xing_username: jekyll
 # pinterest_username: jekyll
 # youtube_username: jekyll
