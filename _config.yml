@@ -35,10 +35,10 @@ linkedin_username: yeji-song
 googlescholar_username: zg_wOm0AAAAJ&hl=ko&oi=sra
 
 # Additional icon links
-additional_links:
-- title: email
-  icon: fa-solid fa-envelope
-  url: ldynx@snu.ac.kr
+# additional_links:
+# - title: email
+#   icon: fa-solid fa-envelope
+#   url: ldynx@snu.ac.kr
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
@@ -76,8 +76,8 @@ content:
         link_text: project page
         additional_links:
           - title:  arXiv page for project
-            icon: ai ai-arxiv
-            url: 
+            icon: fab fa-github
+            url: https://github.com/ldynx/SAVE
           - title:  Github page for project
             icon: fab fa-github
             url: https://github.com/ldynx/SAVE
