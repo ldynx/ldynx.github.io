@@ -53,7 +53,9 @@ googlescholar_username: zg_wOm0AAAAJ&hl=ko&oi=sra
 # about_title: About Me (Use this to override about section title)
 about_profile_image: Directory of profile image (eg. images/profile.jpg)
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+  I am a Ph.D student at Seoul National University, under the supervision of [Prof. Nojun Kwak](http://mipal.snu.ac.kr/index.php/Main_Page). My research interests center around computer vision, 
+  with a primary focus on video generation & editing, aiming to push the boundaries of their applications in real-world scenarios.
+  # <mark>like this</mark>.
 
   You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
     - Lists
