@@ -71,7 +71,7 @@ content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: SAVE: Protagonist Diversification with Structure Agnostic Video Editing
+        title: SAVE\: Protagonist Diversification with Structure Agnostic Video Editing
         link: https://ldynx.github.io/SAVE/
         link_text: project page
         additional_links:
