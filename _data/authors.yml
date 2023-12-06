@@ -18,27 +18,35 @@ chaerin:
 seoyoung:
   first_name: Seoyoung
   last_name: Lee
+  website: https://scholar.google.com/citations?hl=ko&user=Z8JUlnYAAAAJ
 jangho:
   first_name: Jangho
   last_name: Kim
+  website: https://scholar.google.com/citations?hl=ko&user=mzFEJVIAAAAJ
 jayeon:
   first_name: Jayeon
   last_name: Yoo
+  website: https://scholar.google.com/citations?hl=ko&user=JAeV59wAAAAJ
 kiyoon:
   first_name: Kiyoon
   last_name: Yoo
+  website: https://scholar.google.com/citations?hl=ko&user=S93OUYQAAAAJ
 jaeseok:
   first_name: Jaeseok
   last_name: Choi
+  website: https://scholar.google.com/citations?hl=ko&user=ZRPeEn0AAAAJ
 yerim:
   first_name: Yerim
   last_name: Kim
+  website: https://scholar.google.com/citations?hl=ko&user=nS8vgAQAAAAJ
 jaeyoung:
   first_name: Jaeyoung
   last_name: Yoo
+  website: https://scholar.google.com/citations?hl=ko&user=xQ2kWlYAAAAJ
 wonsik:
   first_name: Wonsik
   last_name: Shin
+  website: 
 junsoo:
   first_name: Junsoo
   last_name: Lee
@@ -46,3 +54,4 @@ junsoo:
 jeesoo:
   first_name: Jeesoo
   last_name: Kim
+  website: https://sites.google.com/site/jeesookim0305
