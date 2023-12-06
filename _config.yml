@@ -68,14 +68,14 @@ content:
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
+      - layout: middle
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: 'SAVE: Protagonist Diversification with Structure Agnostic Video Editing'
         link: https://ldynx.github.io/SAVE/
-        link_text: project page
+        link_text: https://ldynx.github.io/SAVE/
         additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          - title:  arXiv page for project (eg. sproogen/modern-resume-theme)
             icon: fab fa-github
             url: https://arxiv.org/abs/2312.02503
           - title:  Github page for project (eg. sproogen/modern-resume-theme)
