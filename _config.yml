@@ -24,6 +24,8 @@ position: Research Scientist
 email: ldynx@snu.ac.kr
 description: >-
   I am a Ph.D student at Seoul National University, under the supervision of [Prof. Nojun Kwak](http://mipal.snu.ac.kr/index.php/Main_Page).
+
+  
   My research interests center around computer vision, with a primary focus on video generation & editing, aiming to push the boundaries of their applications in real-world scenarios.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ldynx.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
