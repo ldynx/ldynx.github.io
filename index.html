@@ -93,6 +93,7 @@ layout: null
   <section class="section">
     <div class="container is-max-desktop">
 
+      <!--
       <h2 class="title is-3">News</h2>
       <div class="content">
         <ul>
@@ -103,6 +104,7 @@ layout: null
           {% endfor %}
         </ul>
       </div>
+      -->
 
       <h2 class="title is-3">Publications</h2>
 
@@ -126,7 +128,7 @@ layout: null
             <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
             <div class="publication-authors">
               {% for author_id in publication.authors %}
-              {% assign author = site.data.authors[author_id] %}
+              {% assign author = site.data.authors[author_id.strip("*")] %}
               <span class="author-block {% if author.is_me %}author-me{% endif %}">
                 {% if author.is_me %}
                 {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
