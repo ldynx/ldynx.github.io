@@ -1,11 +1,10 @@
-- name: University of Washington 
+- name: Seoul National University
   description: >-
-    Ph. D in Computer Science, advised by <a href="https://smseitz.com">Steven M. Seitz</a> and
-    <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>.<br />
-    Supported by Samsung Scholarship 2015-2020 ($50,000/year for 5 years)
-  dates: Fall 2015 - Spring 2022
+    Ph. D in Computer Science, advised by <a href="http://mipal.snu.ac.kr/index.php/Main_Page">Prof. Nojun Kwak</a>.<br />
+    Supported by LG Electronics Scholarship 2023-2025
+  dates: Spring 2020 - Current
 
-- name: University of Illinois at Urbana-Champaign
+- name: Seoul National University
   description: >-
-    B.S. in Computer Science, advised by <a href="https://dhoiem.cs.illinois.edu/">Derek Hoiem</a>.
-  dates: Fall 2009 - Spring 2013
+    B.S. in Statistics and Psychology (double-major).
+  dates: Spring 2013 - Spring 2020
