@@ -23,8 +23,8 @@
   image_mouseover: fignerf_after.mp4
   authors:
     - jangho
-    - jayeon
-    - yeji
+    - jayeon*
+    - yeji*
     - kiyoon
     - njkwak
 
@@ -40,6 +40,6 @@
     - yeji
     - chaerin
     - seoyoung
-    - njkwak *
-    - jslee *
+    - njkwak*
+    - jslee*
 
