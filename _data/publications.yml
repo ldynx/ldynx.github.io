@@ -7,11 +7,11 @@
   image: camp_before.jpg
   image_mouseover: camp_after.mp4
   authors:
-    - keunhong
-    - phenzler
-    - bmild
-    - barron
-    - rmbrualla
+    - yeji
+    - wonsik
+    - junsoo
+    - jeesoo
+    - nojunk
 
 - id: hypernerf
   title: "HyperNeRF: A Higher-Dimensional Representation for Topologically Varying Neural Radiance Fields"
