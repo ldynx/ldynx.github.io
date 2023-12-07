@@ -123,9 +123,11 @@ layout: null
                 {% if author.is_me %}
                 {{ author.first_name | slice: 0 }}. {{ author.last_name }}{% if forloop.last == false %}{% if author_id contains '*' %} * {% endif %},{%
                 endif %}
+                {% if forloop.last and author_id contains '*' %} * {% endif %}
                 {% else %}
                 <a href="{{ author.website }}">{{ author.first_name | slice: 0 }}. {{ author.last_name }}</a>{% if
                 forloop.last == false %}{% if author_id contains '*' %} * {% endif %},{% endif %}
+                {% if forloop.last and author_id contains '*' %} * {% endif %}
                 {% endif %}
               </span>
               {% endfor %}
