@@ -43,7 +43,7 @@ layout: null
           <h1 class="subtitle is-5">{{ site.position }}</h1>
         </div>
         <div class="column is-narrow portrait-column">
-          <img class="portrait-image" src="./images/portrait.jpg" alt="A portrait of Keunhong Park" />
+          <img class="portrait-image" src="./images/portrait.jpg" alt="A portrait of Yeji Song" />
         </div>
         <div class="column has-text-right">
           <p>
@@ -139,6 +139,23 @@ layout: null
           </div>
         </div>
         {% endfor %}
+
+        <h2>Projects</h2>
+
+        {% for project om site.data.projects %}
+        <div class="columns">
+          <div class="column is-four-fifths">
+            <b>{{ project.name }}</b><br />
+            {{ project.description }}
+          </div>
+          <div class="column is-one-fifths has-text-right">
+            {{ project.dates }}
+            <br />
+            {{ project.location }}
+          </div>
+        </div>
+        {% endfor %}
+
       </div>
     </div>
   </section>
