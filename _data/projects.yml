@@ -20,6 +20,9 @@
 - name: Development of object detector for Fashion AI Chatbot
   organization: *Ministry of Science, and Information and Communication Technologies (ICT)*
   description: >-
+    Participated in developing an AI chatbot that facilitates natural conversations about fashion and offers personalized recommendations during online shopping
+    Notably, the conversation engages in both text and images for a comprehensive user experience.
+    Contributed to implementing an object detector capable of analyzing user-provided images, capturing clothing items, and extracting critical features.
   dates: "Jan 2022 - Dec 2022"
   location: Korea
 
@@ -29,11 +32,4 @@
     Participated in a project aimed at creating an autonomous outdoor security robot capable of independent navigation and object detection.
     Enhanced the robot's detection capabilities by leveraging official benchmark datasets and a limited amount of real-world data.
   dates: "June 2021 - Dec 2021"
-  location: Korea
-
-# GNN
-- name: Delivery
-  description: >-
-  dates: "Sep 2021 - Jan 2022"
-  location: Korea
-  
+  location: Korea  
