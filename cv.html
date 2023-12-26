@@ -142,16 +142,14 @@ layout: null
 
         <h2>Projects</h2>
 
-        {% for project om site.data.projects %}
+        {% for project in site.data.projects %}
         <div class="columns">
           <div class="column is-four-fifths">
-            <b>{{ project.name }}</b><br />
+            <b>{{ project.organization }}</b><br />
             {{ project.description }}
           </div>
           <div class="column is-one-fifths has-text-right">
             {{ project.dates }}
-            <br />
-            {{ project.location }}
           </div>
         </div>
         {% endfor %}
