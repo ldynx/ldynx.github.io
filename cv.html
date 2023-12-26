@@ -113,7 +113,6 @@ layout: null
         {% assign unique_tags = site.data.publications | map: 'tag' | uniq %}
         
         {% for tag in unique_tags %}
-          <br />
           <p class="category-name">{{ tag }}</p>
           {% for publication in site.data.publications %}
             {% if publication.tag == tag %}
@@ -155,7 +154,6 @@ layout: null
         {% assign unique_tags = site.data.projects | map: 'tag' | uniq %}
         
         {% for tag in unique_tags %}
-          <br />
           <p class="category-name">{{ tag }}</p>
           {% for project in site.data.projects %}
             {% if project.tag == tag %}
