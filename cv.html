@@ -141,18 +141,21 @@ layout: null
         {% endfor %}
 
         <h2>Projects</h2>
-
+        
         {% for project in site.data.projects %}
-        <div class="columns">
-          <div class="column is-four-fifths">
-            <b>{{ project.name }}</b><br />
-            <i>{{ project.organization }}</i><br />
-            {% for description in project.description %}
-              • {{ description }}<br />
-            {% endfor %}
-          </div>
-          <div class="column is-one-fifths has-text-right">
-            {{ project.dates }}
+        {% assign category = project.tag %}
+        <div class="columns {{ category }}">
+          <div class="columns">
+            <div class="column is-four-fifths">
+              <b>{{ project.name }}</b><br />
+              <i>{{ project.organization }}</i><br />
+              {% for description in project.description %}
+                • {{ description }}<br />
+              {% endfor %}
+            </div>
+            <div class="column is-one-fifths has-text-right">
+              {{ project.dates }}
+            </div>
           </div>
         </div>
         {% endfor %}
