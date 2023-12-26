@@ -1,4 +1,5 @@
 - id: save
+  tag: video generation & editing
   title: "SAVE: Protagonist Diversification with Structure Agnostic Video Editing"
   venue: arXiv, 2023
   description: "We adopt motion personalization in video editing tasks, isolating the motion from a single source video and subsequently modifying the protagonist accordingly."
@@ -14,6 +15,7 @@
     - njkwak
 
 - id: dcil
+  tag: pruning
   title: "Finding Efficient Pruned Network via Refined Gradients for Pruned Weights"
   venue: ACM MM, 2023
   description: "We advance dynamic pruning by employing refined gradients to update the pruned weights, enhancing both training stability and the model performance."
@@ -29,6 +31,7 @@
     - njkwak
 
 - id: cf-nsg
+  tag: video generation & editing
   title: "Towards Efficient Neural Scene Graphs by Learning Consistency Fields"
   venue: BMVC, 2022
   description: "In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation."
@@ -44,6 +47,7 @@
     - jslee*
 
 - id: md3d
+  tag: 3d object detection
   title: "Md3d: Mixture-density-based 3d object detection in point clouds"
   venue: IEEE Access, 2022
   description: "We utilize the Gaussian Mixture Model (GMM) in the 3D object detection task to predict the distribution of 3D bounding boxes, eliminating the need for laborious, hand-crafted anchor design."
@@ -58,6 +62,7 @@
     - njkwak
 
 - id: pa-aug
+  tag: 3d object detection
   title: "Part-aware data augmentation for 3d object detection in point cloud"
   venue: IROS, 2021
   description: "We delve into data augmentation in 3D object detection, leveraging sophisticated and rich structural information present in 3D labels."
