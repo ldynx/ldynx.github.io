@@ -1,35 +1,29 @@
 # Generation
 - name: Video outpainting for Media Art
-  organization: *Easywith Co., Ltd.*
+  organization: Easywith Co., Ltd.
   description: >-
     Tackled the physical limitations in the Media Art Exhibition derived from exhibition space which has a different size and ratio from artwork.
-    Adopting the diffusion-based method to video outpainting, extended the artwork to match the size and ratio of the exhibition space. 
+    Adopting the diffusion-based video method, the artwork has been outpainted to match the size and ratio of the exhibition space. 
   dates: "Nov 2023 - Feb 2024"
-  location: Korea
 
 # Vision Application
 - name: Webtoon translator machine
-  organization: *Naver Webtoon Corp.*
+  organization: Naver Webtoon Corp.
   description: >-
-    Rearranging balloons and typesets is necessary during webtoon translation, and proper segmentation in webtoon datasets becomes essential.
-    However, due to the sparse foreground labels, segmentation models easily fall into background bias.
+    Rearranging balloons and typesets is necessary during webtoon translation, and proper segmentation for these elements becomes essential.
     Took charge of the entire development process of the webtoon segmentation model, from enhancing data augmentation schemes to building a demo page.
   dates: "Jan 2023 - March 2023"
-  location: Korea
 
 - name: Development of object detector for Fashion AI Chatbot
-  organization: *Ministry of Science, and Information and Communication Technologies (ICT)*
+  organization: Ministry of Science, and Information and Communication Technologies (ICT)
   description: >-
-    Participated in developing an AI chatbot that facilitates natural conversations about fashion and offers personalized recommendations during online shopping
-    Notably, the conversation engages in both text and images for a comprehensive user experience.
-    Contributed to implementing an object detector capable of analyzing user-provided images, capturing clothing items, and extracting critical features.
+    Participated in developing an AI chatbot that facilitates multimodal conversations about fashion, engaging in both text and images.
+    Contributed to implementing an object detector capable of analyzing the user-provided images, capturing clothing items, and extracting critical features.
   dates: "Jan 2022 - Dec 2022"
-  location: Korea
 
 - name: Unmanned outdoor security robot
-  organization: *Samsung Electronics Co., Ltd.*
+  organization: Samsung Electronics Co., Ltd.
   description: >-
     Participated in a project aimed at creating an autonomous outdoor security robot capable of independent navigation and object detection.
     Enhanced the robot's detection capabilities by leveraging official benchmark datasets and a limited amount of real-world data.
   dates: "June 2021 - Dec 2021"
-  location: Korea  
