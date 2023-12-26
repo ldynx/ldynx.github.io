@@ -146,9 +146,9 @@ layout: null
         <div class="columns">
           <div class="column is-four-fifths">
             <b>{{ project.name }}</b><br />
-            <i>{{ project.organization }}<br />
+            <i>{{ project.organization }}</i><br />
             {% for description in project.description %}
-              {{ description }}<br />
+              • {{ description }}<br />
             {% endfor %}
           </div>
           <div class="column is-one-fifths has-text-right">
