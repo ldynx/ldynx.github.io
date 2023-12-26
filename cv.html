@@ -146,7 +146,7 @@ layout: null
         
         {% for tag in unique_tags %}
           <p class="castoro"><b><i>{{ tag }}</i></b></p>
-          {% for project in site.data.projects | where: 'tag', tag }
+          {% for project in site.data.projects | where: 'tag', tag %}
             <div class="columns">          
               <div class="column is-four-fifths">
                 <b>{{ project.name }}</b><br />
