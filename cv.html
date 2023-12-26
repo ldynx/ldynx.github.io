@@ -145,7 +145,7 @@ layout: null
         {% assign unique_tags = site.data.projects | map: 'tag' | uniq %}
         
         {% for tag in unique_tags %}
-          <span class="category-name">{{ tag }}</span>
+          <p class="category-name">{{ tag }}</p>
           {% for project in site.data.projects | where: 'tag', tag %}
             <div class="columns">          
               <div class="column is-four-fifths">
