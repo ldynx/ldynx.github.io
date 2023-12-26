@@ -141,11 +141,12 @@ layout: null
         {% endfor %}
 
         <h2>Projects</h2>
-        
-        {% for project in site.data.projects %}
-        {% assign category = project.tag %}
-        <div class="columns {{ category }}">
-          <div class="columns">
+
+        {% assign unique_tags = site.data.projects | map: 'tag' | uniq %}
+        {% for tag in unique_tags %}
+          <b><i>{{ tag }}</i></b>
+          {% for project in site.data.projects | where: 'tag', tag %}
+          <div class="columns">          
             <div class="column is-four-fifths">
               <b>{{ project.name }}</b><br />
               <i>{{ project.organization }}</i><br />
@@ -157,7 +158,7 @@ layout: null
               {{ project.dates }}
             </div>
           </div>
-        </div>
+          {% endfor %}
         {% endfor %}
 
       </div>
