@@ -23,7 +23,7 @@ layout: null
     gtag('config', '{{ site.google_analytics }}');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro|Noto+Serif" rel="stylesheet">
   <link href="./css/fontawesome.all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="./css/bulma.min.css" rel="stylesheet">
@@ -145,7 +145,7 @@ layout: null
         {% assign unique_tags = site.data.projects | map: 'tag' | uniq %}
         
         {% for tag in unique_tags %}
-          <span class="castoro">{{ tag }}</span>
+          <span class="category-name">{{ tag }}</span>
           {% for project in site.data.projects | where: 'tag', tag %}
             <div class="columns">          
               <div class="column is-four-fifths">
