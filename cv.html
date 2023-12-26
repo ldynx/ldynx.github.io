@@ -146,21 +146,19 @@ layout: null
         
         {% for tag in unique_tags %}
           <p class="castoro"><b><i>{{ tag }}</i></b></p>
-          {% for project in site.data.projects}
-            {% if project.tag == tag %}
-              <div class="columns">          
-                <div class="column is-four-fifths">
-                  <b>{{ project.name }}</b><br />
-                  <i>{{ project.organization }}</i><br />
-                  {% for description in project.description %}
-                    • {{ description }}<br />
-                  {% endfor %}
-                </div>
-                <div class="column is-one-fifths has-text-right">
-                  {{ project.dates }}
-                </div>
+          {% for project in site.data.projects | where: 'tag', tag }
+            <div class="columns">          
+              <div class="column is-four-fifths">
+                <b>{{ project.name }}</b><br />
+                <i>{{ project.organization }}</i><br />
+                {% for description in project.description %}
+                  • {{ description }}<br />
+                {% endfor %}
               </div>
-            {% endif %}
+              <div class="column is-one-fifths has-text-right">
+                {{ project.dates }}
+              </div>
+            </div>
           {% endfor %}
         {% endfor %}
 
