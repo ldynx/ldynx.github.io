@@ -1,5 +1,5 @@
 - id: easywith_outpainting
-  tag: video generation & editing
+  tag: Video Generation & Editing
   name: Video outpainting for Media Art
   organization: Easywith Co., Ltd.
   description:
@@ -8,7 +8,7 @@
   dates: "Nov 2023 - Feb 2024"
 
 - id: webtoon_segmantation
-  tag: vision application
+  tag: Vision Application
   name: Webtoon translator machine
   organization: Naver Webtoon Corp.
   description:
@@ -17,7 +17,7 @@
   dates: "Jan 2023 - March 2023"
 
 - id: ict_detection
-  tag: vision application
+  tag: Vision Application
   name: Development of object detector for Fashion AI Chatbot
   organization: Ministry of Science, and Information and Communication Technologies (ICT)
   description:
@@ -26,7 +26,7 @@
   dates: "Jan 2022 - Dec 2022"
 
 - id: samsung_detection
-  tag: vision application
+  tag: Vision Application
   name: Unmanned outdoor security robot
   organization: Samsung Electronics Co., Ltd.
   description:
