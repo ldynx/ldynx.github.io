@@ -8,12 +8,6 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-.castoro {
-  font-family: 'Castoro', serif;
-  font-weight: bold;
-  font-style: italic;
-}
-
 .portrait-column {
     padding: 0;
 }
@@ -26,6 +20,13 @@ body {
 .author-me {
     font-weight: 600;
 }
+
+.category-name {
+  font-family: 'Noto Serif', serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
 
 h2 {
     margin-top: 0.5em !important;
