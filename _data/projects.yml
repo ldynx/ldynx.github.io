@@ -1,5 +1,5 @@
-# Generation
 - id: easywith_outpainting
+  tag: video generation
   name: Video outpainting for Media Art
   organization: Easywith Co., Ltd.
   description:
@@ -7,8 +7,8 @@
     - Adopting the diffusion-based video method, the artwork has been outpainted to match the size and ratio of the exhibition space. 
   dates: "Nov 2023 - Feb 2024"
 
-# Vision Application
 - id: webtoon_segmantation
+  tag: vision application
   name: Webtoon translator machine
   organization: Naver Webtoon Corp.
   description:
@@ -17,6 +17,7 @@
   dates: "Jan 2023 - March 2023"
 
 - id: ict_detection
+  tag: vision application
   name: Development of object detector for Fashion AI Chatbot
   organization: Ministry of Science, and Information and Communication Technologies (ICT)
   description:
@@ -25,6 +26,7 @@
   dates: "Jan 2022 - Dec 2022"
 
 - id: samsung_detection
+  tag: vision application
   name: Unmanned outdoor security robot
   organization: Samsung Electronics Co., Ltd.
   description:
