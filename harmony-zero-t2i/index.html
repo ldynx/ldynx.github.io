@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Our method diversifies the subject's pose in zero-shot customization, identifying a conflict between the visual and textual embeddings.">
+  <meta name="keywords" content="Diffusion, Zero-shot Customization">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harmonizing Visual and Textual Embeddings for Zero-Shot Text-to-Image Customization</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Harmonizing Visual and Textual Embeddings for Zero-Shot <br> Text-to-Image Customization</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ldynx.github.io/">Yeji Song</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=FmeJA1sAAAAJ&hl=ko&oi=ao">Jimyeong Kim</a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="https://github.com/Wonhark">Wonhark Park</a><sup>*</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/ceteris11">Wonsik Shin</a>,</span>
+            <span class="author-block">
+              <a href="https://drl.snu.ac.kr/">Wonjong Rhee</a>,</span>
+            <span class="author-block">
+              <a href="http://mipal.snu.ac.kr/index.php/Main_Page">Nojun Kwak</a><sup>✝</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup></sup>Seoul National University</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal contribution</span>
+            <span class="author-block"><sup>✝</sup>Corresponding author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2403.14155"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2403.14155"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ldynx/harmony-zero-t2i"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="columns is-centered has-text-centered">
+    <h2 class="subtitle">
+      <b>TL;DR </b> We alleviate pose bias and identity loss in the existing zero-shot customization methods.
+    </h2> 
+  </div>
+</section>
+
+<section class="hero is-light is-small" style="margin-top: 30px;">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">        
+
+        <!-- pet_cat1 -->
+        <div class="item">
+          <span class="tag is-medium is-rounded is-light is-info" style="background-color: #93A8FF">
+            <span class="icon" style="color: white"><i class="fas fa-cat"></i></span>
+            <span> <span style="color: white;">Pose bias</span></span>
+          </span>
+          <div class="column is-centered has-text-centered">
+            <img src="static/images/ProjectPage_intro1.png"/>
+          </div>
+        </div>
+
+        <!-- cat1 -->
+        <div class="item">
+          <span class="tag is-medium is-rounded is-light is-info" style="background-color: #93A8FF">
+            <span class="icon" style="color: white"><i class="fas fa-cat"></i></span>
+            <span> <span style="color: white;">Pose bias</span></span>
+          </span>
+          <div class="column is-centered has-text-centered">
+            <img src="static/images/ProjectPage_intro2.png"/>
+          </div>
+        </div>              
+
+        <!-- dog5 -->
+        <div class="item">
+          <span class="tag is-medium is-rounded is-light is-info" style="background-color: #FEBBF1">
+            <span class="icon" style="color: white"><i class="fas fa-paw"></i></span>
+            <span> <span style="color: white;">Identity loss</span></span>
+          </span>
+          <div class="column is-centered has-text-centered">
+            <img src="static/images/ProjectPage_intro3.png"/>
+          </div>
+        </div>              
+        
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In a surge of text-to-image (T2I) models and their customization methods that generate new images of a user-provided subject, current works focus on alleviating costs incurred by a lengthy per-subject optimization. 
+            These zero-shot customization methods encode the image of a specified subject into a visual embedding which is then utilized alongside the textual embedding for diffusion guidance. 
+            The visual embedding incorporates intrinsic information about the subject, while the textual embedding provides a new, transient context. 
+            However, the existing methods often
+            <ol>
+            <li> are significantly affected by the input images, <i>eg.</i>, generating images with the same pose </li>
+              <li> exhibit deterioration in the subject's identity. </li>
+            </ol>
+            We first pin down the problem and show that redundant pose information in the visual embedding interferes with the textual embedding containing the desired pose information. 
+            To address this issue, we propose <b>orthogonal visual embedding</b> which effectively harmonizes with the given textual embedding. 
+            We also adopt the visual-only embedding and inject the subject's clear features utilizing a <b>self-attention swap</b>. Our results demonstrate the effectiveness and robustness of our method, 
+            which offers highly flexible zero-shot generation while effectively maintaining the subject's identity.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="row is-centered has-text-centered is-four-fifths">
+          <img id="architecture" src="static/images/Method_method4.png"/>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            </br>
+            <b>Orchestration</b> breaks down the visual embedding into two components: 
+            one resides in the textual subspace and induces a conflict with the textual embedding,
+            while the other is perpendicular to the textual subspace. 
+            By adopting the latter or <i>orthogonal visual embedding</i>, we could alleviate the interference among the contextual embeddings.
+            </br>
+            <b>Self-attention Swap</b> adopts another denoising process guided by the visual-only embedding that fundamentally evades the collision between the visual and textual embedding.
+            Therefore, we can aggregate clean information about the subject.
+            </br>
+            <span class="tag is-small is-rounded is-light is-info" style="background-color: #C0CEFF">
+              <span> Note</span>
+            </span>  
+            Our method is generic and easily applicable to any zero-shot customization method that utilizes visual and textual embeddings, as it does not require an additional tuning process.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Method. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Comparison. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative Results</h2>
+
+        </br>
+        <!-- <h2 class="title is-5" style="text-align: left">Comparison with BLIP-Diffusion [<span style="color: blue;">1</span>]</h2> -->
+        <div class="row is-centered has-text-centered is-four-fifths">
+          <img id="architecture" src="static/images/Experiment_qualitative3.jpg"/>
+        </div>
+
+        <!-- </br>
+        <h2 class="title is-5" style="text-align: left">Comparison with ELITE [<span style="color: blue;">2</span>]</h2>
+        <div class="row is-centered has-text-centered is-four-fifths">
+          <img id="architecture" src="static/images/Experiment_elite2.jpg"/>
+        </div> -->
+
+      </div>
+    </div>
+    <!--/ Comparison. -->
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="text-align: center">More Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">        
+
+        <div class="item">
+          <div class="column is-centered has-text-centered">
+            <img src="static/images/Supplement_qualitative_cat__0.jpg"/>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="column is-centered has-text-centered">
+            <img src="static/images/Supplement_qualitative_dog6__4.jpg"/>
+          </div>
+        </div>              
+
+        <div class="item">
+          <div class="column is-centered has-text-centered">
+            <img src="static/images/Supplement_qualitative_pet_cat_5__8.jpg"/>
+          </div>
+        </div>              
+
+        <div class="item">
+          <div class="column is-centered has-text-centered">
+            <img src="static/images/Supplement_qualitative_dog3__5.jpg"/>
+          </div>
+        </div>              
+
+        <div class="item">
+          <div class="column is-centered has-text-centered">
+            <img src="static/images/Supplement_qualitative_dog_2__0.jpg"/>
+          </div>
+        </div>              
+
+        <div class="item">
+          <div class="column is-centered has-text-centered">
+            <img src="static/images/Supplement_qualitative_elite.jpg"/>
+          </div>
+        </div>              
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Related Works</h2>
+    <p>
+      Our work builds upon the research of <a href="https://arxiv.org/abs/2305.14720">BLIP-Diffusion</a> 
+      and <a href="https://arxiv.org/abs/2302.13848">ELITE</a>. 
+      Many thanks for their foundational contributions.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{song2024harmonizing,
+      title={Harmonizing Visual and Textual Embeddings for Zero-Shot Text-to-Image Customization}, 
+      author={Yeji Song and Jimyeong Kim and Wonhark Park and Wonsik Shin and Wonjong Rhee and Nojun Kwak},
+      year={2024},
+      eprint={2403.14155},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <!--
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website is adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
