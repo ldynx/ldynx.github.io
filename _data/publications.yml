@@ -1,3 +1,20 @@
+- id: harmony
+  tag: Image Customization
+  title: "Harmonizing Visual and Textual Embeddings for Zero-Shot Text-to-Image Customization"
+  venue: arXiv, 2024
+  description: "There is a conflict among contextual embeddings in zero-shot T2I customization when varying the subject's pose. We resolve it by orthogonalization and attention swap."
+  project_page: "https://ldynx.github.io/harmony-zero-t2i/"
+  arxiv: 2403.14155
+  image: camp_before.jpg
+  image_mouseover: camp_after.mp4
+  authors:
+    - yeji
+    - jimyeong
+    - wonhark
+    - wonsik
+    - wonjong
+    - njkwak
+
 - id: save
   tag: Video Generation & Editing
   title: "SAVE: Protagonist Diversification with Structure Agnostic Video Editing"
@@ -21,8 +38,7 @@
   description: "We advance dynamic pruning by employing refined gradients to update the pruned weights, enhancing both training stability and the model performance."
   project_page: "https://github.com/Jangho-Kim/DCIL-pytorch"
   arxiv: 2109.04660
-  image: fignerf_before.jpg
-  image_mouseover: fignerf_after.mp4
+  image: dcil.png
   authors:
     - jangho
     - jayeon*
@@ -37,8 +53,8 @@
   description: "In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation."
   project_page: "https://github.com/ldynx/CF-NSG"
   arxiv: 2210.04127
-  image: hypernerf_before.jpg
-  image_mouseover: hypernerf_after.mp4
+  image: cf_nsg.png
+  image_mouseover: cf_nsg.mp4
   authors:
     - yeji
     - chaerin
@@ -52,8 +68,7 @@
   venue: IEEE Access, 2022
   description: "We utilize the Gaussian Mixture Model (GMM) in the 3D object detection task to predict the distribution of 3D bounding boxes, eliminating the need for laborious, hand-crafted anchor design."
   project_page: "https://github.com/sky77764/MD3D"
-  image: hypernerf_before.jpg
-  image_mouseover: hypernerf_after.mp4
+  image: md3d.png
   authors:
     - jaeseok
     - yeji
@@ -67,8 +82,7 @@
   venue: IROS, 2021
   description: "We delve into data augmentation in 3D object detection, leveraging sophisticated and rich structural information present in 3D labels."
   project_page: "https://github.com/sky77764/pa-aug.pytorch"
-  image: hypernerf_before.jpg
-  image_mouseover: hypernerf_after.mp4
+  image: pa_aug.png
   authors:
     - jaeseok
     - yeji
