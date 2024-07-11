@@ -26,8 +26,9 @@ description: >-
   I am a Ph.D student at Seoul National University, under the supervision of [Prof. Nojun Kwak](http://mipal.snu.ac.kr/index.php/Main_Page).
 
   
-  My research interests center around computer vision, with experience spanning across diffusion, video rendering, 3D object detection, segmentation, and network pruning.
   My primary focus is on video & image generation, aiming to push the boundaries of their applications in real-world scenarios.
+  Specifically, developing generative models that provide more diverse experiences to users is my central goal.
+  My research interests also include a broader computer vision area, with experience spanning diffusion, video rendering, segmentation, and 3D object detection.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ldynx.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: KeunhongP
