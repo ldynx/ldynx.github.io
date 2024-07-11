@@ -18,7 +18,7 @@
 - id: save
   tag: Video Generation & Editing
   title: "SAVE: Protagonist Diversification with Structure Agnostic Video Editing"
-  venue: arXiv, 2023
+  venue: ECCV, 2024
   description: "We adopt motion personalization in video editing tasks, isolating the motion from a single source video and subsequently modifying the protagonist accordingly."
   project_page: "https://ldynx.github.io/SAVE/"
   arxiv: 2312.02503
