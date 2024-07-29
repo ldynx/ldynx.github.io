@@ -5,8 +5,8 @@
   description: "We adopt motion personalization in video editing tasks, isolating the motion from a single source video and subsequently modifying the protagonist accordingly."
   project_page: "https://ldynx.github.io/SAVE/"
   arxiv: 2312.02503
-  image: camp_before.jpg
-  image_mouseover: camp_after.mp4
+  image: save.jpg
+  image_mouseover: save.mp4
   authors:
     - yeji
     - wonsik
@@ -14,7 +14,7 @@
     - jeesoo
     - njkwak
   awards:
-  - "NEW"
+  - "NEW!"
 
 - id: harmony
   tag: Image Customization
@@ -23,8 +23,7 @@
   description: "There is a conflict among contextual embeddings in zero-shot T2I customization when varying the subject's pose. We resolve it by orthogonalization and attention swap."
   project_page: "https://ldynx.github.io/harmony-zero-t2i/"
   arxiv: 2403.14155
-  image: camp_before.jpg
-  image_mouseover: camp_after.mp4
+  image: harmony.png
   authors:
     - yeji
     - jimyeong*
