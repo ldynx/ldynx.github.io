@@ -1,6 +1,6 @@
 - id: kocca_style_transfer
   tag: Generation & Editing
-  name: Korean Tradition Style Transfer
+  name: Korean traditional art style transfer
   organization: Ministry of Culture, Sports and Tourism (MCST)
   description:
     - Aimed to generate images that faithfully follow specific traditional Korean art styles.
