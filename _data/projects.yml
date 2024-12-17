@@ -1,10 +1,19 @@
+- id: kocca_style_transfer
+  tag: Generation & Editing
+  name: Korean Tradition Style Transfer
+  organization: Ministry of Culture, Sports and Tourism (MCST)
+  description:
+    - Aimed to generate images that faithfully follow specific traditional Korean art styles.
+    - By viewing styles within the customization framework, we optimized unique tokens to represent each style. 
+  dates: "April 2024 - Dec 2024"
+
 - id: easywith_outpainting
-  tag: Video Generation & Editing
+  tag: Generation & Editing
   name: Video outpainting for Media Art
   organization: Easywith Co., Ltd.
   description:
     - Tackled the physical limitations in the Media Art Exhibition derived from exhibition space which has a different size and ratio from artwork.
-    - Adopting the diffusion-based video method, the artwork has been outpainted to match the size and ratio of the exhibition space. 
+    - Adopting the diffusion-based video method, we outpainted the artworks to match the size and ratio of the exhibition space. 
   dates: "Nov 2023 - Feb 2024"
 
 - id: webtoon_segmantation
