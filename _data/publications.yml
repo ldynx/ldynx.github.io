@@ -1,3 +1,19 @@
+- id: harmony
+  tag: Image Customization
+  title: "Harmonizing Visual and Textual Embeddings for Zero-Shot Text-to-Image Customization"
+  venue: AAAI, 2024
+  description: "There is a conflict among contextual embeddings in zero-shot T2I customization when varying the subject's pose. We resolve it by orthogonalization and attention swap."
+  project_page: "https://ldynx.github.io/harmony-zero-t2i/"
+  arxiv: 2403.14155
+  image: harmony.png
+  authors:
+    - yeji
+    - jimyeong*
+    - wonhark*
+    - wonsik
+    - wonjong
+    - njkwak
+
 - id: save
   tag: Video Generation & Editing
   title: "SAVE: Protagonist Diversification with Structure Agnostic Video Editing"
@@ -12,24 +28,6 @@
     - wonsik
     - junsoo
     - jeesoo
-    - njkwak
-  awards:
-  - "NEW!"
-
-- id: harmony
-  tag: Image Customization
-  title: "Harmonizing Visual and Textual Embeddings for Zero-Shot Text-to-Image Customization"
-  venue: arXiv, 2024
-  description: "There is a conflict among contextual embeddings in zero-shot T2I customization when varying the subject's pose. We resolve it by orthogonalization and attention swap."
-  project_page: "https://ldynx.github.io/harmony-zero-t2i/"
-  arxiv: 2403.14155
-  image: harmony.png
-  authors:
-    - yeji
-    - jimyeong*
-    - wonhark*
-    - wonsik
-    - wonjong
     - njkwak
 
 - id: text-detection
