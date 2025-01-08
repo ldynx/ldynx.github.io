@@ -1,17 +1,3 @@
-- id: 
-  tag: Image Customization
-  title: "Targeted Data Protection for Diffusion Model by Matching Training Trajectory"
-  venue: AAAI Workshop, 2025
-  description: "We aim to prevent unauthorized T2I customization by guiding the weight trajectory of protected data to ensure it outputs only the preciese targeted image."
-  project_page: 
-  arxiv: 
-  image: tafap.png
-  authors:
-    - hojun
-    - mijin
-    - yeji
-    - njkwak
-
 - id: harmony
   tag: Image Customization
   title: "Harmonizing Visual and Textual Embeddings for Zero-Shot Text-to-Image Customization"
@@ -42,6 +28,20 @@
     - wonsik
     - junsoo
     - jeesoo
+    - njkwak
+
+- id: 
+  tag: Image Customization
+  title: "Targeted Data Protection for Diffusion Model by Matching Training Trajectory"
+  venue: AAAI Workshop, 2025
+  description: "We aim to prevent unauthorized T2I customization by guiding the weight trajectory of protected data to ensure it outputs only the preciese targeted image."
+  project_page: 
+  arxiv: 
+  image: tafap.png
+  authors:
+    - hojun
+    - mijin
+    - yeji
     - njkwak
 
 - id: text-detection
