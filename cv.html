@@ -182,7 +182,7 @@ layout: null
 
         <h2>Reviewer</h2>
 
-        {% assign unique_tags = site.data.projects | map: 'tag' | uniq %}
+        {% assign unique_tags = site.data.reviewer | map: 'tag' | uniq %}
 
         <div class="columns">
           {% for review in site.data.reviewer %}
@@ -193,7 +193,7 @@ layout: null
 
         <h2>Teaching</h2>
 
-        {% assign unique_tags = site.data.projects | map: 'tag' | uniq %}
+        {% assign unique_tags = site.data.teaching | map: 'tag' | uniq %}
         
         <div class="columns">
           <b>T.A.</b><br />
