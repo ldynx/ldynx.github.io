@@ -57,7 +57,7 @@
     - njkwak
 
 - id: dcil
-  tag: Efficient Model
+  tag: Model Efficiency
   title: "Finding Efficient Pruned Network via Refined Gradients for Pruned Weights"
   venue: ACM MM, 2023
   description: "We advance dynamic pruning by employing refined gradients to update the pruned weights, enhancing both training stability and the model performance."
