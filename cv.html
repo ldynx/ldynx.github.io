@@ -183,12 +183,13 @@ layout: null
         <h2>Reviewer</h2>
 
         {% assign unique_tags = site.data.projects | map: 'tag' | uniq %}
-        
-        {% for review in site.data.reviewer %}
-          <div class="columns">
-              • {{ review }}<br />
-          </div>
-        {% endfor %}
+
+        <div class="columns">
+          {% for review in site.data.reviewer %}
+            <div class="columns is-four-fifths">
+                • {{ review }}<br />
+            </div>
+          {% endfor %}
 
         <h2>Teaching</h2>
 
@@ -198,7 +199,7 @@ layout: null
           <b>T.A.</b><br />
             {% for lecture in site.data.teaching %}
               <div class="column is-four-fifths">
-                • {{ lecture.name }}
+                • {{ lecture.name }}<br />
               </div>
               <div class="column is-one-fifths has-text-right">
                 {{ lecture.dates }}
