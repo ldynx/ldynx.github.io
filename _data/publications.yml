@@ -29,7 +29,7 @@
     - njkwak
 
 - id: save
-  tag: Video Generation & Editing
+  tag: Video Generative Models
   title: "SAVE: Protagonist Diversification with Structure Agnostic Video Editing"
   venue: ECCV, 2024
   description: "We adopt motion personalization in video editing tasks, isolating the motion from a single source video and subsequently modifying the protagonist accordingly."
@@ -72,7 +72,7 @@
     - njkwak
 
 - id: cf-nsg
-  tag: Video Generation & Editing
+  tag: Video Generative Models
   title: "Towards Efficient Neural Scene Graphs by Learning Consistency Fields"
   venue: BMVC, 2022
   description: "In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation."
