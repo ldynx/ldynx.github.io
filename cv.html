@@ -190,21 +190,24 @@ layout: null
                 • {{ review }}<br />
             </div>
           {% endfor %}
+        </div>
 
         <h2>Teaching</h2>
 
         {% assign unique_tags = site.data.teaching | map: 'tag' | uniq %}
         
         <div class="columns">
-          <b>T.A.</b><br />
-            {% for lecture in site.data.teaching %}
-              <div class="column is-four-fifths">
-                • {{ lecture.name }}<br />
-              </div>
-              <div class="column is-one-fifths has-text-right">
-                {{ lecture.dates }}
-              </div>
-            {% endfor %}
+          <div class="column">
+            <b>T.A.</b><br />
+              {% for lecture in site.data.teaching %}
+                <div class="column is-four-fifths">
+                  • {{ lecture.name }}<br />
+                </div>
+                <div class="column is-one-fifths has-text-right">
+                  {{ lecture.dates }}
+                </div>
+              {% endfor %}
+          </div>
         </div>
 
       </div>
