@@ -4,7 +4,7 @@
   organization: Ministry of Culture, Sports and Tourism (MCST)
   description:
     - Aimed to generate images that faithfully follow specific traditional Korean art styles.
-    - By viewing styles within the customization framework, we optimized unique tokens to represent each style. 
+    - Viewing styles within the customization framework, we optimized unique tokens to represent each style. 
   dates: "Apr 2024 - Dec 2024"
 
 - id: easywith_outpainting
@@ -40,5 +40,5 @@
   organization: Samsung Electronics Co., Ltd.
   description:
     - Participated in a project aimed at creating an autonomous outdoor security robot capable of independent navigation and object detection.
-    - Enhanced the robot's detection capabilities by leveraging official benchmark datasets and a limited amount of real-world data.
+    # - Enhanced the robot's detection capabilities by leveraging official benchmark datasets and a limited amount of real-world data.
   dates: "Jun 2021 - Dec 2021"
