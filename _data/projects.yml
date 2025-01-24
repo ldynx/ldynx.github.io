@@ -18,7 +18,7 @@
 
 - id: webtoon_segmantation
   tag: Segmentation & Detection
-  name: Webtoon translator machine
+  name: Semantic segmentation for Webtoon images
   organization: Naver Webtoon Corp.
   description:
     - Rearranging balloons and typesets is necessary during webtoon translation, and proper segmentation for these elements becomes essential.
