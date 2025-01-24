@@ -1,5 +1,5 @@
 - id: kocca_style_transfer
-  tag: Generative Models
+  tag: Video Generation
   name: Korean traditional art style transfer
   organization: Ministry of Culture, Sports and Tourism (MCST)
   description:
@@ -8,7 +8,7 @@
   dates: "April 2024 - Dec 2024"
 
 - id: easywith_outpainting
-  tag: Generative Models
+  tag: Video Generation
   name: Video outpainting for Media Art
   organization: Easywith Co., Ltd.
   description:
