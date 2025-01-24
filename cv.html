@@ -180,6 +180,34 @@ layout: null
           {% endfor %}
         {% endfor %}
 
+        <h2>Reviewer</h2>
+
+        {% assign unique_tags = site.data.projects | map: 'tag' | uniq %}
+        
+        {% for review in site.data.reviewer %}
+          <div class="columns">          
+            <div class="column is-four-fifths">
+                • {{ review }}<br />
+            </div>
+          </div>
+        {% endif %}
+
+        <h2>Teaching</h2>
+
+        {% assign unique_tags = site.data.projects | map: 'tag' | uniq %}
+        
+        <div class="columns">          
+          <div class="column is-four-fifths">
+            <b>{{ lecture.name }}</b><br />
+              {% for lecture in site.data.teaching %}
+                  • {{ lecture.name }}<br />
+                <div class="column is-one-fifths has-text-right">
+                  {{ lecture.dates }}
+                </div>
+              {% endfor %}
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
