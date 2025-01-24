@@ -198,13 +198,11 @@ layout: null
         
         <div class="columns">
           {% for lecture in site.data.teaching %}
-            <div class="column">
-              <div class="column is-four-fifths">
-                  • {{ lecture.name }}
-              </div>
-              <div class="column is-one-fifths has-text-right">
-                {{ lecture.dates }}
-                </div>
+            <div class="column is-four-fifths">
+                • {{ lecture.name }}
+            </div>
+            <div class="column is-one-fifths has-text-right">
+              {{ lecture.dates }}
             </div>
           {% endfor %}
         </div>
