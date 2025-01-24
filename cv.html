@@ -197,18 +197,16 @@ layout: null
         {% assign unique_tags = site.data.teaching | map: 'tag' | uniq %}
         
         <div class="columns">
-          <div class="column">
-            {% for lecture in site.data.teaching %}
-              <div class="columns" style="margin-bottom: 0.5rem;">
-                <div class="column is-four-fifths">
+          {% for lecture in site.data.teaching %}
+            <div class="column">
+              <div class="column is-four-fifths">
                   • {{ lecture.name }}
-                </div>
-                <div class="column is-one-fifths has-text-right">
-                  {{ lecture.dates }}
-                </div>
               </div>
-            {% endfor %}
-          </div>
+              <div class="column is-one-fifths has-text-right">
+                {{ lecture.dates }}
+                </div>
+            </div>
+          {% endfor %}
         </div>
 
       </div>
