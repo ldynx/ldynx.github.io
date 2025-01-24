@@ -199,14 +199,16 @@ layout: null
         <div class="columns">
           <div class="column">
             <b>T.A.</b><br />
-              {% for lecture in site.data.teaching %}
+            {% for lecture in site.data.teaching %}
+              <div class="columns">
                 <div class="column is-four-fifths">
                   • {{ lecture.name }}
                 </div>
                 <div class="column is-one-fifths has-text-right">
                   {{ lecture.dates }}
                 </div>
-              {% endfor %}
+              </div>
+            {% endfor %}
           </div>
         </div>
 
