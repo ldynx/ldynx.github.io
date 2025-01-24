@@ -5,7 +5,7 @@
   description:
     - Aimed to generate images that faithfully follow specific traditional Korean art styles.
     - By viewing styles within the customization framework, we optimized unique tokens to represent each style. 
-  dates: "April 2024 - Dec 2024"
+  dates: "Apr 2024 - Dec 2024"
 
 - id: easywith_outpainting
   tag: Video Generation
@@ -41,4 +41,4 @@
   description:
     - Participated in a project aimed at creating an autonomous outdoor security robot capable of independent navigation and object detection.
     - Enhanced the robot's detection capabilities by leveraging official benchmark datasets and a limited amount of real-world data.
-  dates: "June 2021 - Dec 2021"
+  dates: "Jun 2021 - Dec 2021"
