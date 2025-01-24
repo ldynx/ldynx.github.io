@@ -1,5 +1,5 @@
 - id: harmony
-  tag: Generative Model Personalization
+  tag: Image & Video Generation
   title: "Harmonizing Visual and Textual Embeddings for Zero-Shot Text-to-Image Customization"
   venue: AAAI, 2025
   description: "There is a conflict among contextual embeddings in zero-shot T2I customization when varying the subject's pose. We resolve it by orthogonalization and attention swap."
@@ -15,7 +15,7 @@
     - njkwak
 
 - id: tafap
-  tag: Generative Model Personalization
+  tag: Safe Generative Models
   title: "Targeted Data Protection for Diffusion Model by Matching Training Trajectory"
   venue: AAAI Workshop, 2025
   description: "We aim to prevent unauthorized T2I customization by guiding the weight trajectory of protected data to ensure it outputs only the precise targeted image."
@@ -29,7 +29,7 @@
     - njkwak
 
 - id: save
-  tag: Video Generation & Editing
+  tag: Image & Video Generation
   title: "SAVE: Protagonist Diversification with Structure Agnostic Video Editing"
   venue: ECCV, 2024
   description: "We adopt a personalization framework for video editing tasks, isolating the motion as a concept from a source video and subsequently modifying the protagonist as a novel context."
@@ -45,7 +45,7 @@
     - njkwak
 
 - id: text-detection
-  tag: Machine Text Detection
+  tag: Safe Generative Models
   title: "Exploring Causal Mechanisms for Machine Text Detection Methods"
   venue: NAACL Workshop, 2024
   description: "With the increasing importance of discriminating machine-text from human text, we show the existence of backdoor path that confounds the relationships between text and its detection score."
@@ -72,7 +72,7 @@
     - njkwak
 
 - id: cf-nsg
-  tag: Video Generation & Editing
+  tag: Image & Video Generation
   title: "Towards Efficient Neural Scene Graphs by Learning Consistency Fields"
   venue: BMVC, 2022
   description: "In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation."
