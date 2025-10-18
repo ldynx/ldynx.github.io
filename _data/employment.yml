@@ -3,6 +3,12 @@
 #   dates: "May 2022 - Current"
 #   location: Seattle, WA
 
+- company: Meta
+  description: >-
+    Research Scientist Intern. Worked on developing efficient image generative models.
+  dates: "Aug 2025 - Jan 2026"
+  location: Seattle, WA
+
 - company: NAVER Webtoon
   description: >-
     Applied AI Intern on Webtoon AI team. Worked on Semantic Segmentation for Webtoon Platform.
