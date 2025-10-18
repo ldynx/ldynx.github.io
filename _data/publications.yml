@@ -1,3 +1,18 @@
+- id: reflex
+  tag: Image & Video Generation
+  title: "ReFlex: Text-Guided Editing of Real Images in Rectified Flow via Mid-Step Feature Extraction and Attention Adaptation"
+  venue: ICCV, 2025 Highlight
+  description: "We developed a new real-image editing approach for ReFlow, leveraging analysis of intermediate representations"
+  project_page: "https://wlaud1001.github.io/ReFlex/"
+  arxiv: 2507.01496
+  image: reflex.png
+  authors:
+    - jimyeong
+    - jungwon
+    - yeji
+    - njkwak
+    - wonjong
+    
 - id: harmony
   tag: Image & Video Generation
   title: "Harmonizing Visual and Textual Embeddings for Zero-Shot Text-to-Image Customization"
