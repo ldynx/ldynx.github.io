@@ -104,9 +104,9 @@ layout: null
         <div class="columns">
           <div class="column is-four-fifths">
             <b>{{ job.company }}</b><br />
-            <!-- {{ job.description }} -->
-            {% for description in job.description %}
-              • {{ description }}<br />            
+            {{ job.description }}
+            <!-- {% for description in job.description %}
+              • {{ description }}<br />             -->
           </div>
           <div class="column is-one-fifths has-text-right">
             {{ job.dates }}
