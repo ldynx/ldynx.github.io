@@ -103,7 +103,7 @@ layout: null
         {% for job in site.data.employment %}
         <div class="columns">
           <div class="column is-four-fifths">
-            <b>{{ job.company }}</b><br />
+            <b>{{ job.company }}</b> | {{ job.position }}<br />
             {% for description in job.description %}
               • {{ description }}<br />
             {% endfor %}
