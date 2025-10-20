@@ -136,7 +136,7 @@ layout: null
             {% if publication.tag == tag %}
             <div class="columns">
               <div class="column is-four-fifths">
-                <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
+                <span class="category-name">{{ publication.label }}</span> <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
                 <div class="publication-authors">
                   {% for author_id in publication.authors %}
                   <!--
