@@ -3,13 +3,15 @@
 #   dates: "May 2022 - Current"
 #   location: Seattle, WA
 
-- company: Meta | Research Scientist Intern
+- company: Meta
+  position: Research Scientist Intern
   description:
     - Research on building efficient image generation model.
   dates: "Aug 2025 - Jan 2026"
   location: Seattle, WA
 
-- company: NAVER Webtoon | Research Scientist Intern
+- company: NAVER Webtoon
+  position: Research Scientist Intern
   description:
     - Led the development of a webtoon segmentation model, from designing data augmentation schemes to building a demo page.
     - Research on video generation model using the motion token concept. Published ECCV'24.
