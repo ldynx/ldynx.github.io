@@ -121,14 +121,14 @@ layout: null
         <!-- <h2>Publications</h2>  -->
         {% assign unique_tags = site.data.publications | map: 'tag' | uniq %}
         <h2 style="display: inline;">Publications</h2>
-        <span class="publication-tags-inline">
+        <span>
           {% for tag in unique_tags %}
-            <span class="publication-tag">{{ tag }}</span>
+            <span class="category-name">{{ tag }}</span>
           {% endfor %}
         </span>
         
         {% for tag in unique_tags %}
-          <p class="category-name">{{ tag }}</p>
+          <!-- <p class="category-name">{{ tag }}</p> -->
           {% for publication in site.data.publications %}
             {% if publication.tag == tag %}
             <div class="columns">
