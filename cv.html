@@ -122,7 +122,7 @@ layout: null
 
         {% assign unique_tags = site.data.publications | map: 'tag' | uniq %}
         {% assign tag_labels = site.data.publications %}
-        <h2 style="display: inline;">Publications</h2>
+        <h2 style="display: inline;">Publications</h2>&nbsp;&nbsp;
         <span>
           {% for tag in unique_tags %}
             {% assign label_obj = tag_labels | where: "tag", tag | first %}
