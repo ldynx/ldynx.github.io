@@ -120,7 +120,7 @@ layout: null
 
         <!-- <h2>Publications</h2>  -->
         {% assign unique_tags = site.data.publications | map: 'tag' | uniq %}
-        <h2 style="display: inline;">Publications</h2>
+        <h2>Publications</h2>
         <span>
           {% for tag in unique_tags %}
             <span class="category-name">{{ tag }}</span>
