@@ -1,5 +1,6 @@
 - id: reflex
   tag: Image & Video Generation
+  label: "[G]"
   title: "ReFlex: Text-Guided Editing of Real Images in Rectified Flow via Mid-Step Feature Extraction and Attention Adaptation"
   venue: ICCV, 2025 Highlight
   description: "We developed a new real-image editing approach for ReFlow, leveraging analysis of intermediate representations"
@@ -15,6 +16,7 @@
     
 - id: harmony
   tag: Image & Video Generation
+  label: "[G]"
   title: "Harmonizing Visual and Textual Embeddings for Zero-Shot Text-to-Image Customization"
   venue: AAAI, 2025
   description: "There is a conflict among contextual embeddings in zero-shot T2I customization when varying the subject's pose. We resolve it by orthogonalization and attention swap."
@@ -31,6 +33,7 @@
 
 - id: tafap
   tag: Safe Generative Models
+  label: "[S]"
   title: "Targeted Data Protection for Diffusion Model by Matching Training Trajectory"
   venue: AAAI Workshop, 2025
   description: "We aim to prevent unauthorized T2I customization by guiding the weight trajectory of protected data to ensure it outputs only the precise targeted image."
@@ -45,6 +48,7 @@
 
 - id: save
   tag: Image & Video Generation
+  label: "[G]"
   title: "SAVE: Protagonist Diversification with Structure Agnostic Video Editing"
   venue: ECCV, 2024
   description: "We adopt a personalization framework for video editing tasks, isolating the motion as a concept from a source video and subsequently modifying the protagonist as a novel context."
@@ -61,6 +65,7 @@
 
 - id: text-detection
   tag: Safe Generative Models
+  label: "[S]"
   title: "Exploring Causal Mechanisms for Machine Text Detection Methods"
   venue: NAACL Workshop, 2024
   description: "With the increasing importance of discriminating machine-text from human text, we show the existence of backdoor path that confounds the relationships between text and its detection score."
@@ -73,6 +78,7 @@
 
 - id: dcil
   tag: Model Efficiency
+  label: "[E]"
   title: "Finding Efficient Pruned Network via Refined Gradients for Pruned Weights"
   venue: ACM MM, 2023
   description: "We advance dynamic pruning by employing refined gradients to update the pruned weights, enhancing both training stability and the model performance."
@@ -88,6 +94,7 @@
 
 - id: cf-nsg
   tag: Image & Video Generation
+  label: "[G]"
   title: "Towards Efficient Neural Scene Graphs by Learning Consistency Fields"
   venue: BMVC, 2022
   description: "In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation."
@@ -104,6 +111,7 @@
 
 - id: md3d
   tag: Object Detection
+  label: "[D]"
   title: "Md3d: Mixture-density-based 3d object detection in point clouds"
   venue: IEEE Access, 2022
   description: "We utilize the Gaussian Mixture Model (GMM) in the 3D object detection task to predict the distribution of 3D bounding boxes, eliminating the need for laborious, hand-crafted anchor design."
@@ -118,6 +126,7 @@
 
 - id: pa-aug
   tag: Object Detection
+  label: "[D]"
   title: "Part-aware data augmentation for 3d object detection in point cloud"
   venue: IROS, 2021
   description: "We delve into data augmentation in 3D object detection, leveraging sophisticated and rich structural information present in 3D labels."
