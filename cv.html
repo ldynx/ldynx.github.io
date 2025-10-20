@@ -119,8 +119,9 @@ layout: null
         {% endfor %}
 
         <h2>Publications</h2>
+
         {% assign unique_tags = site.data.publications | map: 'tag' | uniq %}
-        
+
         {% for tag in unique_tags %}
           <p class="category-name">{{ tag }}</p>
           {% for publication in site.data.publications %}
@@ -158,7 +159,7 @@ layout: null
         <h2>Projects</h2>
 
         {% assign unique_tags = site.data.projects | map: 'tag' | uniq %}
-        
+
         {% for tag in unique_tags %}
           <!-- <p class="category-name">{{ tag }}</p> -->
           {% for project in site.data.projects %}
@@ -193,7 +194,7 @@ layout: null
         <h2>Teaching</h2>
 
         {% assign unique_tags = site.data.teaching | map: 'tag' | uniq %}
-        
+
         <div class="columns">
           <div class="column">
             {% for lecture in site.data.teaching %}
