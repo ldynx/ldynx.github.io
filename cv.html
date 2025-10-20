@@ -122,7 +122,7 @@ layout: null
         {% assign unique_tags = site.data.publications | map: 'tag' | uniq %}
         
         {% for tag in unique_tags %}
-          <!-- <p class="category-name">{{ tag }}</p> -->
+          <p class="category-name">{{ tag }}</p>
           {% for publication in site.data.publications %}
             {% if publication.tag == tag %}
             <div class="columns">
