@@ -3,8 +3,7 @@
   name: Korean traditional art style transfer
   organization: Ministry of Culture, Sports and Tourism (MCST)
   description:
-    - Aimed to generate images that faithfully follow specific traditional Korean art styles.
-    - Viewing styles within the customization framework, we adopted and optimized unique style tokens. 
+    - Established diffusion model that generates traditional Korean art styles.
   dates: "Apr 2024 - Dec 2024"
 
 - id: easywith_outpainting
