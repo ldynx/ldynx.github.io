@@ -138,10 +138,9 @@ layout: null
                     {% if author.is_me %}
                     {{ author.first_name }} {{ author.last_name }}{% if forloop.last == false %}{% if author_id contains '*' %} * {% endif %},{%
                     endif %}
-                    {% if forloop.last and author_id contains '*' %} * {% endif %}
                     {% else %}
                     {{ author.first_name }} {{ author.last_name }}{% if
-                    forloop.last == false %}{% if author_id contains '*' %} * {% endif %},{% endif %}
+                    forloop.last == false %},{% endif %}
                     {% if forloop.last and author_id contains '*' %} * {% endif %}
                     {% endif %}
                   </span>
