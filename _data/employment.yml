@@ -8,12 +8,12 @@
   description:
     - Research on building efficient image generation model.
   dates: "Aug 2025 - Jan 2026"
-  location: Seattle, WA
+  location: Seattle, USA
 
 - company: NAVER Webtoon
   position: Research Scientist Intern
   description:
-    - Led the development of a webtoon segmentation model, from designing data augmentation schemes to building a demo page.
+    - Led the end-to-end development of a webtoon segmentation model.
     - Research on video generation model using the motion token concept. Published ECCV'24.
   dates: "Jan 2023 - Jul 2023"
-  location: Korea
+  location: Seongnam, Korea
