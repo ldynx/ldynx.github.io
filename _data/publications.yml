@@ -117,7 +117,7 @@
     - njkwak
 
 - id: pa-aug
-  tag: [D] Object Detection
+  tag: Object Detection
   title: "Part-aware data augmentation for 3d object detection in point cloud"
   venue: IROS, 2021
   description: "We delve into data augmentation in 3D object detection, leveraging sophisticated and rich structural information present in 3D labels."
