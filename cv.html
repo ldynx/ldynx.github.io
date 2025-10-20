@@ -164,8 +164,7 @@ layout: null
             {% if project.tag == tag %}
               <div class="columns">          
                 <div class="column is-four-fifths">
-                  <b>{{ project.name }}</b><br />
-                  <i>{{ project.organization }}</i><br />
+                  <b>{{ project.name }}</b> | {{ project.organization }}<br />
                   {% for description in project.description %}
                     • {{ description }}<br />
                   {% endfor %}
