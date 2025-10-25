@@ -2,7 +2,7 @@
   tag: Image & Video Generation
   label: "[G]"
   title: "ReFlex: Text-Guided Editing of Real Images in Rectified Flow via Mid-Step Feature Extraction and Attention Adaptation"
-  venue: ICCV, 2025 Highlight
+  venue: ICCV, 2025
   description: "We developed a new real-image editing approach for ReFlow, leveraging analysis of intermediate representations"
   project_page: "https://wlaud1001.github.io/ReFlex/"
   arxiv: 2507.01496
