@@ -5,7 +5,7 @@
   venue: ICCV, 2025 Highlight
   description: 
     - We developed a new real-image editing approach for FLUX, leveraging analysis of intermediate representations.
-    - ReFlex achieved text alignment improvements of 1.69 -- 7.11% on PIE-Bench and 3.21 -- 16.46% on Wild-TI2I-Real.
+    - ReFlex achieved text alignment improvements of 1.69-7.11% on PIE-Bench and 3.21-16.46% on Wild-TI2I-Real.
   project_page: "https://wlaud1001.github.io/ReFlex/"
   arxiv: 2507.01496
   image: reflex.png
@@ -23,7 +23,7 @@
   venue: AAAI, 2025
   description: 
     - We discovered a conflict among contextual embeddings in zero-shot T2I customization. 
-    - By resolving the conflict, we improved text alignment by 3.82 -- 5.26% and image alignment by 2.11 -- 12.2%.
+    - By resolving the conflict, we improved text alignment by 3.82-5.26% and image alignment by 2.11-12.2%.
   project_page: "https://ldynx.github.io/harmony-zero-t2i/"
   arxiv: 2403.14155
   image: harmony.png
@@ -40,7 +40,8 @@
   label: "[S]"
   title: "Targeted Data Protection for Diffusion Model by Matching Training Trajectory"
   venue: AAAI Workshop, 2025
-  description: "We aim to prevent unauthorized T2I customization by guiding the weight trajectory of protected data to ensure it outputs only the precise targeted image."
+  description: 
+    - We prevented unauthorized T2I customization not only by degrading image quality, but also by guiding the generated image to show the intended target.
   project_page: 
   arxiv: 
   image: tafap.png
@@ -55,7 +56,9 @@
   label: "[G]"
   title: "SAVE: Protagonist Diversification with Structure Agnostic Video Editing"
   venue: ECCV, 2024
-  description: "We adopt a personalization framework for video editing tasks, isolating the motion as a concept from a source video and subsequently modifying the protagonist as a novel context."
+  description: 
+    - We expanded video editing capabilities to allow subject replacement even when the new subject has a largely different body structure from the original.
+    - We adopted a personalization framework and introduced a new motion token, resulting in text alignment improvements of up to 7.66%.
   project_page: "https://ldynx.github.io/SAVE/"
   arxiv: 2312.02503
   image: save.jpg
