@@ -58,7 +58,7 @@
   venue: ECCV, 2024
   description: 
     - We expanded video editing capabilities to allow subject replacement even when the new subject has a largely different body structure from the original.
-    - We adopted a personalization framework and introduced a new motion token, resulting in text alignment improvements of up to 7.66%.
+    - We introduced a new motion token, resulting in text alignment improvements of up to 7.66%.
   project_page: "https://ldynx.github.io/SAVE/"
   arxiv: 2312.02503
   image: save.jpg
