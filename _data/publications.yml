@@ -2,8 +2,10 @@
   tag: Image & Video Generation
   label: "[G]"
   title: "ReFlex: Text-Guided Editing of Real Images in Rectified Flow via Mid-Step Feature Extraction and Attention Adaptation"
-  venue: ICCV, 2025
-  description: "We developed a new real-image editing approach for ReFlow, leveraging analysis of intermediate representations"
+  venue: ICCV, 2025 Highlight
+  description: 
+    - We developed a new real-image editing approach for FLUX, leveraging analysis of intermediate representations.
+    - ReFlex achieved text alignment improvements of 1.69 -- 7.11% on PIE-Bench and 3.21 -- 16.46% on Wild-TI2I-Real.
   project_page: "https://wlaud1001.github.io/ReFlex/"
   arxiv: 2507.01496
   image: reflex.png
@@ -19,7 +21,9 @@
   label: "[G]"
   title: "Harmonizing Visual and Textual Embeddings for Zero-Shot Text-to-Image Customization"
   venue: AAAI, 2025
-  description: "There is a conflict among contextual embeddings in zero-shot T2I customization when varying the subject's pose. We resolve it by orthogonalization and attention swap."
+  description: 
+    - We discovered a conflict among contextual embeddings in zero-shot T2I customization. 
+    - By resolving the conflict, we improved text alignment by 3.82 -- 5.26% and image alignment by 2.11 -- 12.2%.
   project_page: "https://ldynx.github.io/harmony-zero-t2i/"
   arxiv: 2403.14155
   image: harmony.png
