@@ -124,41 +124,41 @@ layout: null
           {% endfor %}
         </span>
         
-        {% for tag in unique_tags %}
+        <!-- {% for tag in unique_tags %} -->
           <!-- <p class="category-name">{{ tag }}</p> -->
-          {% for publication in site.data.publications %}
-            {% if publication.tag == tag %}
-            <div class="columns">
-              <div class="column is-four-fifths">
-                <span class="category-name">{{ publication.label }}</span> <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
-                <div class="publication-authors">
-                  {% for author_id in publication.authors %}
-                  <!--
-                  {% assign author = site.data.authors[author_id] %}
-                  -->
-                  {% assign cleaned_author_id = author_id | remove: '*' %}
-                  {% assign author = site.data.authors[cleaned_author_id] %}
-                  <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                    {% if author.is_me %}
-                    {{ author.first_name }} {{ author.last_name }}{% if forloop.last == false %},{%endif %}
-                    {% else %}
-                    {{ author.first_name }} {{ author.last_name }}{% if
-                    forloop.last == false %},{% endif %}
-                    {% endif %}
-                  </span>
-                  {% endfor %}
-                </div>
-                {% for description in publication.description %}
-                  • {{ description }}<br />
+        {% for publication in site.data.publications %}
+          {% if publication.tag == tag %}
+          <div class="columns">
+            <div class="column is-four-fifths">
+              <span class="category-name">{{ publication.label }}</span> <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
+              <div class="publication-authors">
+                {% for author_id in publication.authors %}
+                <!--
+                {% assign author = site.data.authors[author_id] %}
+                -->
+                {% assign cleaned_author_id = author_id | remove: '*' %}
+                {% assign author = site.data.authors[cleaned_author_id] %}
+                <span class="author-block {% if author.is_me %}author-me{% endif %}">
+                  {% if author.is_me %}
+                  {{ author.first_name }} {{ author.last_name }}{% if forloop.last == false %},{%endif %}
+                  {% else %}
+                  {{ author.first_name }} {{ author.last_name }}{% if
+                  forloop.last == false %},{% endif %}
+                  {% endif %}
+                </span>
                 {% endfor %}
               </div>
-              <div class="column is-one-fifths has-text-right">
-                {{ publication.venue }}
-              </div>
+              {% for description in publication.description %}
+                • {{ description }}<br />
+              {% endfor %}
             </div>
-            {% endif %}
-          {% endfor %}
+            <div class="column is-one-fifths has-text-right">
+              {{ publication.venue }}
+            </div>
+          </div>
+          {% endif %}
         {% endfor %}
+        <!-- {% endfor %} -->
 
         <h2>Projects</h2>
 
