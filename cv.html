@@ -148,7 +148,9 @@ layout: null
                   </span>
                   {% endfor %}
                 </div>
-                {{ publication.description }}
+                {% for description in publication.description %}
+                  • {{ description }}<br />
+                {% endfor %}
               </div>
               <div class="column is-one-fifths has-text-right">
                 {{ publication.venue }}
