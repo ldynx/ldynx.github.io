@@ -57,7 +57,7 @@
   title: "SAVE: Protagonist Diversification with Structure Agnostic Video Editing"
   venue: ECCV, 2024
   description: 
-    - We expanded video editing capabilities to enable subject replacement, even when the new subject has a significantly different body structure.
+    - We expanded video editing capabilities to enable subject replacement across diverse body structures.
     - We introduced a new motion token, resulting in text alignment improvements of up to 7.66%.
   project_page: "https://ldynx.github.io/SAVE/"
   arxiv: 2312.02503
