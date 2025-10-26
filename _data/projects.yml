@@ -28,7 +28,7 @@
 - id: ict_detection
   tag: Segmentation & Detection
   name: Development of object detector for Fashion AI Chatbot
-  organization: Ministry of Science, and Information and Communication Technologies (ICT)
+  organization: Ministry of Information and Communication Technologies (ICT)
   description:
     - Participated in the development of Vision-Language Models (VLMs) for a Fashion AI Chatbot.
     - Established an embedder for detecting clothing items and extracting critical features.
