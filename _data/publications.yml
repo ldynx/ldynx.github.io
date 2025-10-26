@@ -41,7 +41,7 @@
   title: "Targeted Data Protection for Diffusion Model by Matching Training Trajectory"
   venue: AAAI Workshop, 2025
   description: 
-    - We prevented unauthorized T2I customization not only by degrading image quality, but also by guiding the generated image to show the intended target.
+    - We prevented unauthorized T2I customization by guiding the generated image to show the intended target.
   project_page: 
   arxiv: 
   image: tafap.png
@@ -75,7 +75,8 @@
   label: "[S]"
   title: "Exploring Causal Mechanisms for Machine Text Detection Methods"
   venue: NAACL Workshop, 2024
-  description: "With the increasing importance of discriminating machine-text from human text, we show the existence of backdoor path that confounds the relationships between text and its detection score."
+  description: 
+    - We showed the existence of backdoor path that confounds the relationships between text and machine text detection score.
   image: text_detection.png
   authors:
     - kiyoon
@@ -88,7 +89,8 @@
   label: "[E]"
   title: "Finding Efficient Pruned Network via Refined Gradients for Pruned Weights"
   venue: ACM MM, 2023
-  description: "We advance dynamic pruning by employing refined gradients to update the pruned weights, enhancing both training stability and the model performance."
+  description: 
+    - We employed refined gradients to update the pruning weights, enhancing both training stability and the model performance.
   project_page: "https://github.com/Jangho-Kim/DCIL-pytorch"
   arxiv: 2109.04660
   image: dcil.png
@@ -104,7 +106,8 @@
   label: "[G]"
   title: "Towards Efficient Neural Scene Graphs by Learning Consistency Fields"
   venue: BMVC, 2022
-  description: "In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation."
+  description: 
+    - In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation.
   project_page: "https://github.com/ldynx/CF-NSG"
   arxiv: 2210.04127
   image: cf_nsg.png
@@ -121,7 +124,8 @@
   label: "[D]"
   title: "Md3d: Mixture-density-based 3d object detection in point clouds"
   venue: IEEE Access, 2022
-  description: "We utilize the Gaussian Mixture Model (GMM) in the 3D object detection task to predict the distribution of 3D bounding boxes, eliminating the need for laborious, hand-crafted anchor design."
+  description: 
+    - We utilize the Gaussian Mixture Model (GMM) in the 3D object detection task to predict the distribution of 3D bounding boxes, eliminating the need for laborious, hand-crafted anchor design.
   project_page: "https://github.com/sky77764/MD3D"
   image: md3d.png
   authors:
@@ -136,7 +140,8 @@
   label: "[D]"
   title: "Part-aware data augmentation for 3d object detection in point cloud"
   venue: IROS, 2021
-  description: "We delve into data augmentation in 3D object detection, leveraging sophisticated and rich structural information present in 3D labels."
+  description: 
+    - We delve into data augmentation in 3D object detection, leveraging sophisticated and rich structural information present in 3D labels.
   project_page: "https://github.com/sky77764/pa-aug.pytorch"
   image: pa_aug.png
   authors:
