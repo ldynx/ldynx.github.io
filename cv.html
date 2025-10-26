@@ -124,10 +124,7 @@ layout: null
           {% endfor %}
         </span>
         
-        <!-- {% for tag in unique_tags %} -->
-          <!-- <p class="category-name">{{ tag }}</p> -->
         {% for publication in site.data.publications %}
-          <!-- {% if publication.tag == tag %} -->
           <div class="columns">
             <div class="column is-four-fifths">
               <span class="category-name">{{ publication.label }}</span> <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
@@ -156,9 +153,7 @@ layout: null
               {{ publication.venue }}
             </div>
           </div>
-          <!-- {% endif %} -->
         {% endfor %}
-        <!-- {% endfor %} -->
 
         <h2>Projects</h2>
 
