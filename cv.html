@@ -48,15 +48,19 @@ layout: null
         </div>
         -->
         <div class="column has-text-right">
-          <a href="{{ site.url }}">
-            <i class="fas fa-home"></i>
-            {% assign url_parts = site.url | split: "//" %}
-            {{ url_parts[1] }}
-          </a>&nbsp;&nbsp;&nbsp;
-          <a href="https://github.com/{{ site.github_username }}">
-            <i class="fab fa-github"></i>
-            {{ site.github_username }}
-          </a>&nbsp;&nbsp;&nbsp;
+          <p>
+            <a href="{{ site.url }}">
+              <i class="fas fa-home"></i>
+              {% assign url_parts = site.url | split: "//" %}
+              {{ url_parts[1] }}
+            </a>
+          </p>
+          <p>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fab fa-github"></i>
+              {{ site.github_username }}
+            </a>
+          </p>
           <!--
           <p>
             <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -65,10 +69,12 @@ layout: null
             </a>
           </p>
           -->
-          <a href="mailto:{{ site.email }}">
-            <i class="fas fa-envelope"></i>
-            {{ site.email }}
-          </a>
+          <p>
+            <a href="mailto:{{ site.email }}">
+              <i class="fas fa-envelope"></i>
+              {{ site.email }}
+            </a>
+          </p>
         </div>
       </div>
 
@@ -118,7 +124,7 @@ layout: null
 
         {% assign unique_tags = site.data.publications | map: 'tag' | uniq %}
         {% assign tag_labels = site.data.publications %}
-        <h2>Publications</h2>&nbsp;&nbsp;
+        <h2>Publications</h2>
         <span>
           {% for tag in unique_tags %}
             {% assign label_obj = tag_labels | where: "tag", tag | first %}
