@@ -73,8 +73,11 @@ layout: null
       </div>
 
       <div class="content">
-        My primary focus is on video and image generation, editing and diffusion models.
-        My recent works highlight challenges users encounter in real-world scenarios, enabling more flexible and intuitive generation.
+        My primary focus is on <b>video and image generation, editing and diffusion models</b>.
+        My recent works include:
+        - Expanding video editing capabilities by proposing a motion word, enabling subject replacement across diverse body structures.
+        - Identifying and resolving a conflict among embeddings in zero-shot text-to-image (T2I) customization using orthogonal embedding.
+        <!-- My recent works highlight challenges users encounter in real-world scenarios, enabling more flexible and intuitive generation. -->
         My research interests also include a broader computer vision area, with experience spanning video rendering, segmentation, and 3D object detection.
       </div>
 
@@ -125,66 +128,34 @@ layout: null
         </span>
         
         {% for publication in site.data.publications %}
-          {% if publication.cv %}
-            <div class="columns">
-              <div class="column is-four-fifths">
-                <span class="category-name">{{ publication.label }}</span> <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
-                <div class="publication-authors">
-                  {% for author_id in publication.authors %}
-                  <!--
-                  {% assign author = site.data.authors[author_id] %}
-                  -->
-                  {% assign cleaned_author_id = author_id | remove: '*' %}
-                  {% assign author = site.data.authors[cleaned_author_id] %}
-                  <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                    {% if author.is_me %}
-                    {{ author.first_name }} {{ author.last_name }}{% if forloop.last == false %},{%endif %}
-                    {% else %}
-                    {{ author.first_name }} {{ author.last_name }}{% if
-                    forloop.last == false %},{% endif %}
-                    {% endif %}
-                  </span>
-                  {% endfor %}
-                </div>
-                {% for description in publication.description %}
-                  • {{ description }}<br />
+          <div class="columns">
+            <div class="column is-four-fifths">
+              <span class="category-name">{{ publication.label }}</span> <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
+              <div class="publication-authors">
+                {% for author_id in publication.authors %}
+                <!--
+                {% assign author = site.data.authors[author_id] %}
+                -->
+                {% assign cleaned_author_id = author_id | remove: '*' %}
+                {% assign author = site.data.authors[cleaned_author_id] %}
+                <span class="author-block {% if author.is_me %}author-me{% endif %}">
+                  {% if author.is_me %}
+                  {{ author.first_name }} {{ author.last_name }}{% if forloop.last == false %},{%endif %}
+                  {% else %}
+                  {{ author.first_name }} {{ author.last_name }}{% if
+                  forloop.last == false %},{% endif %}
+                  {% endif %}
+                </span>
                 {% endfor %}
               </div>
-              <div class="column is-one-fifths has-text-right">
-                {{ publication.venue }}
-              </div>
+              <!-- {% for description in publication.description %}
+                • {{ description }}<br />
+              {% endfor %} -->
             </div>
-          {% endif %}
-        {% endfor %}
-
-        {% for publication in site.data.publications %}
-          {% unless publication.cv %}
-            <div class="columns">
-              <div class="column is-four-fifths">
-                <span class="category-name">{{ publication.label }}</span> <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
-                <div class="publication-authors">
-                  {% for author_id in publication.authors %}
-                  <!--
-                  {% assign author = site.data.authors[author_id] %}
-                  -->
-                  {% assign cleaned_author_id = author_id | remove: '*' %}
-                  {% assign author = site.data.authors[cleaned_author_id] %}
-                  <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                    {% if author.is_me %}
-                    {{ author.first_name }} {{ author.last_name }}{% if forloop.last == false %},{%endif %}
-                    {% else %}
-                    {{ author.first_name }} {{ author.last_name }}{% if
-                    forloop.last == false %},{% endif %}
-                    {% endif %}
-                  </span>
-                  {% endfor %}
-                </div>
-              </div>
-              <div class="column is-one-fifths has-text-right">
-                {{ publication.venue }}
-              </div>
+            <div class="column is-one-fifths has-text-right">
+              {{ publication.venue }}
             </div>
-          {% endunless %}
+          </div>
         {% endfor %}
 
         <h2>Projects</h2>
