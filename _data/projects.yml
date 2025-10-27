@@ -13,7 +13,7 @@
   organization: Easywith Co., Ltd.
   description:
     - Addressed physical limitations (e.g., exhibition space mismatches) in the Media Art Exhibition.
-    - Developed a video outpainting model by extending a video scene into a panoramic image and re-integrating the expanded regions into the video.
+    - Developed a video outpainting model by extending a video scene into a panoramic image.
   dates: "Nov 2023 - Feb 2024"
 
 - id: webtoon_segmantation
