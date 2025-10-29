@@ -42,22 +42,28 @@ layout: null
           <div class="has-text-centered">
             <h1 class="title is-2">{{ site.name }}</h1>
           </div>
-          <div class="has-text-centered">
+          <div class="has-text-centered" style="margin-top: 1rem;">
             <a href="{{ site.url }}">
               <i class="fas fa-home"></i>
               {% assign url_parts = site.url | split: "//" %}
               {{ url_parts[1] }}
             </a>
             &nbsp;&nbsp;
+            <a href="mailto:{{ site.email }}">
+              <i class="fas fa-envelope"></i>
+              {{ site.email }}
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+              <i class="fab fa-linkedin"></i>
+              {{ site.linkedin_username }}
+            </a>
+            &nbsp;&nbsp;            
             <a href="https://github.com/{{ site.github_username }}">
               <i class="fab fa-github"></i>
               {{ site.github_username }}
             </a>
             &nbsp;&nbsp;
-            <a href="mailto:{{ site.email }}">
-              <i class="fas fa-envelope"></i>
-              {{ site.email }}
-            </a>
           </div>
         </div>
       </div>
