@@ -67,7 +67,9 @@ layout: null
       <div class="content">
         <h2>Research Interest</h2>
         <div class="columns">
-          Generative Models, Diffusion Models, Video Editing, Image Editing
+          <div class="column is-four-fifths">
+            Generative Models, Diffusion Models, Video Editing, Image Editing
+          </div>
         </div>
         
         <h2>Education</h2>
@@ -122,7 +124,9 @@ layout: null
                   </span>
                   {% endfor %}
                 </div>
-                <i class="fas fa-glob"></i> <a href="{{ publication.project_page }}">{{ publication.project_page }}</a>
+                {% if publication.project_page %}
+                <i class="fa-solid fa-earth-americas"></i> <a href="{{ publication.project_page }}">{{ publication.project_page }}</a>
+                {% endfor %}
               </div>
               <div class="column is-one-fifths has-text-right">
                 {{ publication.venue }}
