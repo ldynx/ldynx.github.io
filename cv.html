@@ -66,7 +66,9 @@ layout: null
       
       <div class="content">
         <h2>Research Interest</h2>
+        <div class="columns">
           Generative Models, Diffusion Models, Video Editing, Image Editing
+        </div>
         
         <h2>Education</h2>
         {% for school in site.data.education %}
@@ -102,29 +104,31 @@ layout: null
 
         <h2>Selected Publications</h2>
         {% for publication in site.data.publications %}
-          <div class="columns">
-            <div class="column is-four-fifths">
-              <b>{{ publication.title }}</b>
-              <div class="publication-authors">
-                {% for author_id in publication.authors %}
-                {% assign cleaned_author_id = author_id | remove: '*' %}
-                {% assign author = site.data.authors[cleaned_author_id] %}
-                <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                  {% if author.is_me %}
-                  {{ author.first_name }} {{ author.last_name }}{% if forloop.last == false %},{%endif %}
-                  {% else %}
-                  {{ author.first_name }} {{ author.last_name }}{% if
-                  forloop.last == false %},{% endif %}
-                  {% endif %}
-                </span>
-                {% endfor %}
+          {% if publication.cv %}
+            <div class="columns">
+              <div class="column is-four-fifths">
+                <b>{{ publication.title }}</b>
+                <div class="publication-authors">
+                  {% for author_id in publication.authors %}
+                  {% assign cleaned_author_id = author_id | remove: '*' %}
+                  {% assign author = site.data.authors[cleaned_author_id] %}
+                  <span class="author-block {% if author.is_me %}author-me{% endif %}">
+                    {% if author.is_me %}
+                    {{ author.first_name }} {{ author.last_name }}{% if forloop.last == false %},{%endif %}
+                    {% else %}
+                    {{ author.first_name }} {{ author.last_name }}{% if
+                    forloop.last == false %},{% endif %}
+                    {% endif %}
+                  </span>
+                  {% endfor %}
+                </div>
+                <i class="fas fa-glob"></i> <a href="{{ publication.project_page }}">{{ publication.project_page }}</a>
               </div>
-              <i class="fas fa-glob"></i> <a href="{{ publication.project_page }}">{{ publication.project_page }}</a>
+              <div class="column is-one-fifths has-text-right">
+                {{ publication.venue }}
+              </div>
             </div>
-            <div class="column is-one-fifths has-text-right">
-              {{ publication.venue }}
-            </div>
-          </div>
+          {% endif %}
         {% endfor %}
 
         <h2>Reviewer</h2>
