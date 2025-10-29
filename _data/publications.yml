@@ -114,7 +114,6 @@
   venue: BMVC, 2022
   description: 
     - In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation.
-  project_page: "https://github.com/ldynx/CF-NSG"
   arxiv: 2210.04127
   image: cf_nsg.png
   image_mouseover: cf_nsg.mp4
