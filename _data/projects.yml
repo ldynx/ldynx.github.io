@@ -6,6 +6,7 @@
     - Developed diffusion model that generates traditional Korean art styles.
     - Built a benchmark to effectively compare baselines for Korean art style transfer.
   dates: "Apr 2024 - Dec 2024"
+  cv: True
 
 - id: easywith_outpainting
   tag: Video Generation
@@ -15,6 +16,7 @@
     - Addressed physical limitations (e.g., exhibition space mismatches) in the Media Art Exhibition.
     - Developed a video outpainting model by extending a video scene into a panoramic image.
   dates: "Nov 2023 - Feb 2024"
+  cv: True
 
 - id: webtoon_segmantation
   tag: Segmentation & Detection
@@ -24,6 +26,7 @@
     - Established a webtoon segmentation model as part of a webtoon translation project.
     - Built a demo interface for segmenting and rearranging text balloons and typesets.
   dates: "Jan 2023 - Mar 2023"
+  cv: False
 
 - id: ict_detection
   tag: Segmentation & Detection
@@ -33,6 +36,7 @@
     - Participated in the development of Vision-Language Models (VLMs) for a Fashion AI Chatbot.
     - Established an embedder for detecting clothing items and extracting critical features.
   dates: "Jan 2022 - Dec 2022"
+  cv: False
 
 - id: samsung_detection
   tag: Segmentation & Detection
@@ -42,3 +46,4 @@
     - Enhanced the robot's detection capabilities using a limited amount of a real-world data.
     - Improved mean average precision (mAP) from 39.8% to 91%.
   dates: "Jun 2021 - Dec 2021"
+  cv: False
