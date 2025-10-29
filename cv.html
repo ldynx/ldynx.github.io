@@ -134,10 +134,25 @@ layout: null
           {% endif %}
         {% endfor %}
 
+        <h2>Projects</h2>
+        {% for project in site.data.projects %}
+          {% if project.cv %}
+            <div class="columns">
+              <div class="column is-four-fifths">
+                <b>{{ project.name }}</b> | {{ project.organization }}<br />
+                {% for description in project.description %}
+                  • {{ description }}<br />
+                {% endfor %}
+              </div>
+              <div class="column is-one-fifths has-text-right">
+                {{ project.dates }}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+        
         <h2>Reviewer</h2>
-
         {% assign unique_tags = site.data.reviewer | map: 'tag' | uniq %}
-
         <div class="columns">
           <div class="column">
             {% for review in site.data.reviewer %}
@@ -147,9 +162,7 @@ layout: null
         </div>
 
         <h2>Teaching</h2>
-
         {% assign unique_tags = site.data.teaching | map: 'tag' | uniq %}
-        
         <div class="columns">
           <div class="column">
             {% for lecture in site.data.teaching %}
