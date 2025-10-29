@@ -65,39 +65,41 @@ layout: null
       </div>
 
       <div class="content">
-        <div class="column is-half">
-          <h2>Education</h2>
-          {% for school in site.data.education %}
-            <div class="columns">
-              <div class="column is-half">
-                <b>{{ school.name }}</b><br />
-                {{ school.description }}
+        <div class="columns">
+          <div class="column is-half">
+            <h2>Education</h2>
+            {% for school in site.data.education %}
+              <div class="columns">
+                <div class="column is-half">
+                  <b>{{ school.name }}</b><br />
+                  {{ school.description }}
+                </div>
+                <div class="column is-half has-text-right">
+                  {{ school.dates }}
+                  <br />
+                  {{ school.location }}
+                </div>
               </div>
-              <div class="column is-half has-text-right">
-                {{ school.dates }}
-                <br />
-                {{ school.location }}
+            {% endfor %}
+          </div>
+          <div class="column is-half">
+            <h2>Employment</h2>
+            {% for job in site.data.employment %}
+              <div class="columns">
+                <div class="column is-half">
+                  <b>{{ job.company }}</b> | {{ job.position }}<br />
+                  {% for description in job.description %}
+                    • {{ description }}<br />
+                  {% endfor %}
+                </div>
+                <div class="column is-half has-text-right">
+                  {{ job.dates }}
+                  <br />
+                  {{ job.location }}
+                </div>
               </div>
-            </div>
-          {% endfor %}
-        </div>
-        <div class="column is-half">
-          <h2>Employment</h2>
-          {% for job in site.data.employment %}
-            <div class="columns">
-              <div class="column is-half">
-                <b>{{ job.company }}</b> | {{ job.position }}<br />
-                {% for description in job.description %}
-                  • {{ description }}<br />
-                {% endfor %}
-              </div>
-              <div class="column is-half has-text-right">
-                {{ job.dates }}
-                <br />
-                {{ job.location }}
-              </div>
-            </div>
-          {% endfor %}
+            {% endfor %}
+          </div>
         </div>
 
         {% assign unique_tags = site.data.publications | map: 'tag' | uniq %}
