@@ -124,7 +124,7 @@
     - seoyoung
     - njkwak*
     - jslee*
-  cv: False
+  cv: True
 
 - id: md3d
   tag: Object Detection
