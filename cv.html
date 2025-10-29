@@ -70,7 +70,7 @@ layout: null
             <h2>Education</h2>
             {% for school in site.data.education %}
               <div class="columns">
-                <div class="column is-half">
+                <div class="column is-three-quarters">
                   <b>{{ school.name }}</b><br />
                   {{ school.description }}
                 </div>
@@ -86,7 +86,7 @@ layout: null
             <h2>Employment</h2>
             {% for job in site.data.employment %}
               <div class="columns">
-                <div class="column is-half">
+                <div class="column is-three-quarters">
                   <b>{{ job.company }}</b> | {{ job.position }}<br />
                   {% for description in job.description %}
                     • {{ description }}<br />
