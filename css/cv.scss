@@ -32,7 +32,7 @@ body {
 h2 {
     margin-top: 0.5em !important;
     margin-bottom: 0.3em !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
 }
 
 .columns {
@@ -48,6 +48,11 @@ h2 {
         height: auto;
         font-size: 9pt; /* changing to 10pt has no impact */
     }
+  h2 {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.3em !important;
+    font-size: 16px !important;
+}
 }
 
 .title.is-2 {
