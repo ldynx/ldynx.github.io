@@ -52,7 +52,7 @@
     - mijin
     - yeji
     - njkwak
-  cv: False
+  cv: True
 
 - id: save
   tag: Image & Video Generation
