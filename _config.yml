@@ -32,7 +32,8 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ldynx.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: KeunhongP
-github_username: https://github.com/ldynx
+github_username: ldynx
+linkedin_username: yeji-song
 google_scholar: zg_wOm0AAAAJ
 # google_analytics: G-MFWSBLRKG0
 
