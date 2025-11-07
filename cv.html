@@ -155,21 +155,19 @@ layout: null
             </div>
           {% endif %}
         {% endfor %}
-        
-        <h2>Reviewer</h2>
-        {% assign unique_tags = site.data.reviewer | map: 'tag' | uniq %}
+
         <div class="columns">
           <div class="column">
+            <h2>Reviewer</h2>
+            {% assign unique_tags = site.data.reviewer | map: 'tag' | uniq %}
             {% for review in site.data.reviewer %}
                 • {{ review }}<br />
             {% endfor %}
           </div>
-        </div>
 
-        <h2>Teaching</h2>
-        {% assign unique_tags = site.data.teaching | map: 'tag' | uniq %}
-        <div class="columns">
           <div class="column">
+            <h2>Teaching</h2>
+            {% assign unique_tags = site.data.teaching | map: 'tag' | uniq %}
             {% for lecture in site.data.teaching %}
                   • {{ lecture.name }} ({{ lecture.dates }})<br />
             {% endfor %}
