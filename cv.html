@@ -83,7 +83,7 @@ layout: null
             <b>{{ school.name }}</b><br />
             {{ school.description }}
           </div>
-          <div class="column is-one-fifths has-text-right">
+          <div class="column is-one-fifth has-text-right">
             {{ school.dates }}
             <br />
             {{ school.location }}
@@ -100,7 +100,7 @@ layout: null
               • {{ description }}<br />
             {% endfor %}
           </div>
-          <div class="column is-one-fifths has-text-right">
+          <div class="column is-one-fifth has-text-right">
             {{ job.dates }}
             <br />
             {{ job.location }}
@@ -132,7 +132,7 @@ layout: null
                 <i class="fas fa-globe"></i> <a href="{{ publication.project_page }}">{{ publication.project_page }}</a>
                 {% endif %}
               </div>
-              <div class="column is-one-fifths has-text-right">
+              <div class="column is-one-fifth has-text-right">
                 {{ publication.venue }}
               </div>
             </div>
@@ -149,7 +149,7 @@ layout: null
                   • {{ description }}<br />
                 {% endfor %}
               </div>
-              <div class="column is-one-fifths has-text-right">
+              <div class="column is-one-fifth has-text-right">
                 {{ project.dates }}
               </div>
             </div>
@@ -157,7 +157,7 @@ layout: null
         {% endfor %}
 
         <div class="columns">
-          <div class="column">
+          <div class="column is-one-third">
             <h2>Reviewer</h2>
             {% assign unique_tags = site.data.reviewer | map: 'tag' | uniq %}
             {% for review in site.data.reviewer %}
@@ -165,7 +165,7 @@ layout: null
             {% endfor %}
           </div>
 
-          <div class="column">
+          <div class="column is-two-thirds">
             <h2>Teaching</h2>
             {% assign unique_tags = site.data.teaching | map: 'tag' | uniq %}
             {% for lecture in site.data.teaching %}
