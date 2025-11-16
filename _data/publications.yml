@@ -41,7 +41,7 @@
   tag: Safe Generative Models
   label: "[S]"
   title: "Targeted Data Protection for Diffusion Model by Matching Training Trajectory"
-  venue: AAAI Workshop, 2025
+  venue: AAAI, 2026
   description: 
     - We prevented unauthorized T2I customization by guiding the generated image to show the intended target.
   project_page: 
