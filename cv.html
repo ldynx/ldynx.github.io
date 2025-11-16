@@ -130,9 +130,10 @@ layout: null
                     {% endif %}
                   </span>
                   {% endfor %}
-                  {% if publication.project_page %}
-                  <i class="fas fa-globe"></i> <a href="{{ publication.project_page }}">{{ publication.project_page }}</a>
-                  {% endif %}
+                </div>
+                {% if publication.project_page %}
+                <i class="fas fa-globe"></i> <a href="{{ publication.project_page }}">{{ publication.project_page }}</a>
+                {% endif %}
               <div class="column is-one-fifth has-text-right">
                 {{ publication.venue }}
               </div>
