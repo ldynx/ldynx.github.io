@@ -163,10 +163,7 @@ layout: null
         {% for patent in site.data.patents %}
           <div class="columns">
             <div class="column is-four-fifths">
-              <b>{{ patent.name }}</b><br />
-            </div>
-            <div class="column is-one-fifth has-text-right">
-              {{ patent.dates }}
+              <b>{{ patent.name }}</b> {{ patent.info }} <br />
             </div>
           </div>
         {% endfor %}
