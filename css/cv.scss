@@ -41,11 +41,11 @@ h2 {
 
 @media print {
   .category-name {
-    font-size: 7pt !important;
+    font-size: 12pt !important;
   }
   html, body {
         height: auto;
-        font-size: 9pt; /* changing to 10pt has no impact */
+        font-size: 12pt; /* changing to 10pt has no impact */
     }
   h2 {
     margin-top: 0.5em !important;
