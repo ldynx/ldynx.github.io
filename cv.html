@@ -117,7 +117,7 @@ layout: null
             <div class="columns">
               <div class="column is-four-fifths">
                 <b>{{ publication.title }}</b>
-                <div class="publication-authors">
+                <span class="publication-authors">
                   {% for author_id in publication.authors %}
                   {% assign cleaned_author_id = author_id | remove: '*' %}
                   {% assign author = site.data.authors[cleaned_author_id] %}
@@ -130,7 +130,7 @@ layout: null
                     {% endif %}
                   </span>
                   {% endfor %}
-                </div>
+                </span>
                 {% if publication.project_page %}
                 <i class="fas fa-globe"></i> <a href="{{ publication.project_page }}">{{ publication.project_page }}</a>
                 {% endif %}
