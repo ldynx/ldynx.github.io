@@ -72,8 +72,8 @@ layout: null
         <h2>Research Interest</h2>
         <div class="columns">
           <div class="column is-fifth-fifths">
-            Keywords: <b>Generative Models, Diffusion Models, Video Editing, Image Editing.</b> My recent works include:<br />
-               • 
+            My primary focus is on <b>Generative Models, Diffusion Models, Video Editing, Image Editing.</b> My recent works include:<br />
+               • <br />
                • Expanding video editing capabilities by proposing a motion word, enabling subject replacement across diverse body structures.<br />
                • Identifying and resolving a conflict among embeddings in zero-shot text-to-image (T2I) customization using orthogonal embedding.<br />
               <!-- My recent works highlight challenges users encounter in real-world scenarios, enabling more flexible and intuitive generation. -->
@@ -159,6 +159,18 @@ layout: null
           {% endif %}
         {% endfor %} -->
 
+        <h2>Patents</h2>
+        {% for patent in site.data.patents %}
+          <div class="columns">
+            <div class="column is-four-fifths">
+              <b>{{ patent.name }}</b><br />
+            </div>
+            <div class="column is-one-fifth has-text-right">
+              {{ patent.dates }}
+            </div>
+          </div>
+        {% endfor %}
+        
         <div class="columns">
           <div class="column is-one-third">
             <h2>Reviewer</h2>
