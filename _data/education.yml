@@ -1,13 +1,11 @@
-- name: PhD
-  school: Seoul National University
+- name: Seoul National University
   description: >-
     Ph.D. in Computer Science, advised by <a href="http://mipal.snu.ac.kr/index.php/Main_Page">Prof. Nojun Kwak</a>.<br />
     Supported by LG Electronics Scholarship 2023-2025
   dates: Mar 2020 - Feb 2026 (Expected)
   location: Seoul, Korea
 
-- name: BS
-  school: Seoul National University
+- name: Seoul National University
   description: >-
     B.S. in Statistics and Psychology (double-major).
   dates: Mar 2013 - Feb 2020
