@@ -1,22 +1,3 @@
-- id: reflex
-  tag: Image & Video Generation
-  label: "[G]"
-  title: "ReFlex: Text-Guided Editing of Real Images in Rectified Flow via Mid-Step Feature Extraction and Attention Adaptation"
-  venue: ICCV, 2025 Highlight
-  description: 
-    - We developed a new real-image editing approach for FLUX, leveraging analysis of intermediate representations.
-    - ReFlex achieved text alignment improvements of 1.69-7.11% on PIE-Bench and 3.21-16.46% on Wild-TI2I-Real.
-  project_page: "https://wlaud1001.github.io/ReFlex/"
-  arxiv: 2507.01496
-  image: reflex.png
-  authors:
-    - jimyeong
-    - jungwon
-    - yeji
-    - njkwak
-    - wonjong
-  cv: True
-    
 - id: harmony
   tag: Image & Video Generation
   label: "[G]"
@@ -34,23 +15,6 @@
     - wonhark*
     - wonsik
     - wonjong
-    - njkwak
-  cv: True
-
-- id: tafap
-  tag: Safe Generative Models
-  label: "[S]"
-  title: "Targeted Data Protection for Diffusion Model by Matching Training Trajectory"
-  venue: AAAI, 2026
-  description: 
-    - We prevented unauthorized T2I customization by guiding the generated image to show the intended target.
-  project_page: 
-  arxiv: 
-  image: tafap.png
-  authors:
-    - hojun
-    - mijin
-    - yeji
     - njkwak
   cv: True
 
@@ -72,6 +36,60 @@
     - junsoo
     - jeesoo
     - njkwak
+  cv: True
+
+- id: cf-nsg
+  tag: Image & Video Generation
+  label: "[G]"
+  title: "Towards Efficient Neural Scene Graphs by Learning Consistency Fields"
+  venue: BMVC, 2022
+  description: 
+    - In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation.
+  arxiv: 2210.04127
+  image: cf_nsg.png
+  image_mouseover: cf_nsg.mp4
+  authors:
+    - yeji
+    - chaerin
+    - seoyoung
+    - njkwak*
+    - jslee*
+  cv: True
+
+- id: tafap
+  tag: Safe Generative Models
+  label: "[S]"
+  title: "Targeted Data Protection for Diffusion Model by Matching Training Trajectory"
+  venue: AAAI, 2026
+  description: 
+    - We prevented unauthorized T2I customization by guiding the generated image to show the intended target.
+  project_page: 
+  arxiv: 
+  image: tafap.png
+  authors:
+    - hojun
+    - mijin
+    - yeji
+    - njkwak
+  cv: True
+
+- id: reflex
+  tag: Image & Video Generation
+  label: "[G]"
+  title: "ReFlex: Text-Guided Editing of Real Images in Rectified Flow via Mid-Step Feature Extraction and Attention Adaptation"
+  venue: ICCV, 2025 Highlight
+  description: 
+    - We developed a new real-image editing approach for FLUX, leveraging analysis of intermediate representations.
+    - ReFlex achieved text alignment improvements of 1.69-7.11% on PIE-Bench and 3.21-16.46% on Wild-TI2I-Real.
+  project_page: "https://wlaud1001.github.io/ReFlex/"
+  arxiv: 2507.01496
+  image: reflex.png
+  authors:
+    - jimyeong
+    - jungwon
+    - yeji
+    - njkwak
+    - wonjong
   cv: True
 
 - id: text-detection
@@ -106,24 +124,6 @@
     - kiyoon
     - njkwak
   cv: False
-
-- id: cf-nsg
-  tag: Image & Video Generation
-  label: "[G]"
-  title: "Towards Efficient Neural Scene Graphs by Learning Consistency Fields"
-  venue: BMVC, 2022
-  description: 
-    - In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation.
-  arxiv: 2210.04127
-  image: cf_nsg.png
-  image_mouseover: cf_nsg.mp4
-  authors:
-    - yeji
-    - chaerin
-    - seoyoung
-    - njkwak*
-    - jslee*
-  cv: True
 
 - id: md3d
   tag: Object Detection
