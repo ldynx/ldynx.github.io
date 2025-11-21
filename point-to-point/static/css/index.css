@@ -161,3 +161,15 @@ figcaption {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.video-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* or center */
+  gap: 16px; /* space between videos */
+}
+
+.video-row video {
+  width: 48%; /* or a fixed pixel value, e.g. 300px */
+  height: auto;
+}
