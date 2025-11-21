@@ -222,25 +222,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Previous works usually work well on trivial and consistent shapes, and easily collapse on
-            a difficult target that has a largely different body shape from
-            the original one. In this paper, we spot the bias problem in
-            the existing video editing method that restricts the range
-            of choices for the new protagonist and attempt to address
-            this issue using the conventional image-level personalization method. 
-            <span style=" background: linear-gradient(to top, #F8D32D 50%, transparent 50%)">We adopt 
-            motion personalization that isolates the motion from a single source video and then modifies the
-            protagonist accordingly.</span> To deal with the natural discrepancy 
-            between image and video, we propose a motion word
-            with an <span style=" background: linear-gradient(to top, #67D1E1 50%, transparent 50%)">inflated textual embedding<sup>1</sup></span> 
-            to properly represent the motion in a source video. We also regulate the motion word
-            to attend to proper motion-related areas by introducing a
-            <span style=" background: linear-gradient(to top, #67D1E1 50%, transparent 50%)">novel pseudo optical flow<sup>2</sup></span>,
-            efficiently computed from the pre-calculated attention maps. Finally, we decouple the motion
-            from the appearance of the source video with an 
-            <span style=" background: linear-gradient(to top, #67D1E1 50%, transparent 50%)">additional pseudo word<sup>3</sup></span>. 
-            Extensive experiments demonstrate the editing capability of our method, 
-            taking a step toward more diverse and extensive video editing.
+            Accurately preserving motion while editing a subject remains a core challenge in video editing tasks. 
+            Existing methods often face a trade-off between edit and motion fidelity, as they rely on motion representations 
+            that are either overfitted to the layout or only implicitly defined. To overcome this limitation, 
+            we revisit point-based motion representation. However, identifying meaningful points remains challenging without
+            human input, especially across diverse video scenarios. To address this, we propose a novel motion representation, 
+            anchor tokens, that capture the most essential motion patterns by leveraging the rich prior of a video diffusion model. 
+            Anchor tokens encode video dynamics compactly through a small number of informative point trajectories and can be flexibly
+            relocated to align with new subjects. This allows our method, POINT-TO-POINT, to generalize across diverse scenarios. 
+            Extensive experiments demonstrate that anchor tokens lead to more controllable and semantically aligned video edits, 
+            achieving superior performance in terms of edit and motion fidelity.
           </p>
           <br/>
           <center>
