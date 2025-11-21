@@ -169,7 +169,7 @@ figcaption {
   gap: 0px; /* space between videos */
 }
 
-/* .video-row video {
+.video-row video {
   width: 100%; /* or a fixed pixel value, e.g. 300px */
   height: auto;
-} */
+}
