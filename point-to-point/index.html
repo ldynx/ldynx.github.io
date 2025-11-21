@@ -208,16 +208,14 @@
         <h2 class="title is-3">Motivation</h2>
         <div class="content has-text-justified">
           <p>
-            Accurately preserving motion while editing a subject remains a core challenge in video editing tasks. 
-            Existing methods often face a trade-off between edit and motion fidelity, as they rely on motion representations 
-            that are either overfitted to the layout or only implicitly defined. To overcome this limitation, 
-            we revisit point-based motion representation. However, identifying meaningful points remains challenging without
-            human input, especially across diverse video scenarios. To address this, we propose a novel motion representation, 
-            anchor tokens, that capture the most essential motion patterns by leveraging the rich prior of a video diffusion model. 
-            Anchor tokens encode video dynamics compactly through a small number of informative point trajectories and can be flexibly
-            relocated to align with new subjects. This allows our method, Point-to-Point, to generalize across diverse scenarios. 
-            Extensive experiments demonstrate that anchor tokens lead to more controllable and semantically aligned video edits, 
-            achieving superior performance in terms of edit and motion fidelity.
+            Signal-based methods extract and leverage an explicit motion signal from the source video, 
+            whereas adaptation-based methods embed motion implicitly in the model or latent space,
+            optimizing those representations on the source video. 
+            Point-based methods guide the motion using semantic points and their trajectory. 
+            Despite their respective strengths, all three approaches struggle to satisfy the requirements above. 
+            Signal-based methods overfit to the spatial layout of the source video, often compromising edit fidelity. 
+            Adaptation-based methods often struggle to capture precise motion dynamics, leading to low motion fidelity.
+            Point-based methods require manual annotations, resulting in degraded edit and motion fidelity when points are inaccurate.
           </p>
           <br/>
         </div>
