@@ -1,1 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Structure Agnostic Video Editing (SAVE) generates natural videos, replacing the protagonist of a source video while preserving the motion.">
+  <meta name="keywords" content="Diffusion, Video Editing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAVE: Protagonist Diversification with Structure Agnostic Video Editing</title>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SAVE: Protagonist Diversification with <span style="text-decoration : underline;">S</span>tructure <span style="text-decoration : underline;">A</span>gnostic <span style="text-decoration : underline;">V</span>ideo <span style="text-decoration : underline;">E</span>diting</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ldynx.github.io/">Yeji Song</a><sup>1</sup>,</span>
+            <span class="author-block">
+              Wonsik Shin<sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://ssuhan.github.io">Junsoo Lee</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Jeesoo Kim<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://mipal.snu.ac.kr/index.php/Main_Page">Nojun Kwak</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Seoul National University,</span>
+            <span class="author-block"><sup>2</sup>NAVER Webtoon AI</span>
+          </div>
+
+          <div class="is-size-4"><b> ECCV 2024 </b></div>
+          
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2312.02503"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.02503"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ldynx/SAVE"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        
+        <!-- Cat-flower -->
+        <div class="item item-cat-sun">
+        <figure>
+          <video poster="" id="cat-flower" autoplay controls muted loop playsinline height="70%">
+            <source src="./static/videos/cat_flower/cat.mp4"
+                    type="video/mp4">
+          </video>
+          <figcaption><p><span style="color: rgb(248,211,45);">Source:</span> A <span style="text-decoration: underline;">cat</span> is roaring</p></figcaption>
+        </figure>
+        </div>
+        <div class="item item-dog-sun">
+        <figure>
+          <video poster="" id="dog-flower" autoplay controls muted loop playsinline height="70%">
+            <source src="./static/videos/cat_flower/Ours_dog.mp4"
+                    type="video/mp4">
+          </video>
+          <figcaption><span style="color: rgb(188,223,237);">Edit:</span> A <span style="text-decoration: underline;">dog</span> is roaring</figcaption>
+        </figure>
+        </div>
+        <div class="item item-tiger-sun">
+        <figure>
+          <video poster="" id="tiger-flower" autoplay controls muted loop playsinline height="70%">
+            <source src="./static/videos/cat_flower/Ours_tiger.mp4"
+                    type="video/mp4">
+          </video>
+          <figcaption><span style="color: rgb(188,223,237);">Edit:</span> A <span style="text-decoration: underline;">tiger</span> is roaring</p></figcaption>
+        </figure>
+        </div>
+
+        <!-- Man-skiing -->
+        <div class="item item-man-skiing">
+          <figure>
+            <video poster="" id="man-skiing" autoplay controls muted loop playsinline height="70%">
+              <source src="./static/videos/man-skiing/man-skiing.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption><span style="color: rgb(248,211,45);">Source:</span> A <span style="text-decoration: underline;">man</span> is skiing</figcaption>
+          </figure>
+        </div>
+        <div class="item item-bear-skiing">
+          <figure>
+            <video poster="" id="bear-skiing" autoplay controls muted loop playsinline height="70%">
+              <source src="./static/videos/man-skiing/Ours_bear.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption><span style="color: rgb(188,223,237);">Edit:</span> A <span style="text-decoration: underline;">bear</span> is skiing</figcaption>
+          </figure>
+        </div>
+        <div class="item item-Mickey-skiing">
+          <figure>
+            <video poster="" id="Mickey-skiing" autoplay controls muted loop playsinline height="70%">
+              <source src="./static/videos/man-skiing/Ours_Mickey-Mouse.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption><span style="color: rgb(188,223,237);">Edit:</span> <span style="text-decoration: underline;">Mickey-Mouse</span> is skiing</figcaption>
+          </figure>
+        </div>
+
+        <!-- Car -->
+        <div class="item item-car">
+          <figure>
+            <video poster="" id="car" autoplay controls muted loop playsinline height="70%">
+              <source src="./static/videos/car/car.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption><span style="color: rgb(248,211,45);">Source:</span> A <span style="text-decoration: underline;">car</span> is driving on the road</figcaption>
+          </figure>
+        </div>
+        <div class="item item-train">
+          <figure>
+            <video poster="" id="train" autoplay controls muted loop playsinline height="70%">
+              <source src="./static/videos/car/Ours_train.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption><span style="color: rgb(188,223,237);">Edit:</span> A <span style="text-decoration: underline;">train</span> is driving on the road</figcaption>
+          </figure>
+        </div>
+        <div class="item item-truck">
+          <figure>
+            <video poster="" id="truck" autoplay controls muted loop playsinline height="70%">
+              <source src="./static/videos/car/Ours_truck.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption>A <span style="color: rgb(188,223,237);">Edit:</span> <span style="text-decoration: underline;">truck</span> is driving on the road</figcaption>
+          </figure>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Previous works usually work well on trivial and consistent shapes, and easily collapse on
+            a difficult target that has a largely different body shape from
+            the original one. In this paper, we spot the bias problem in
+            the existing video editing method that restricts the range
+            of choices for the new protagonist and attempt to address
+            this issue using the conventional image-level personalization method. 
+            <span style=" background: linear-gradient(to top, #F8D32D 50%, transparent 50%)">We adopt 
+            motion personalization that isolates the motion from a single source video and then modifies the
+            protagonist accordingly.</span> To deal with the natural discrepancy 
+            between image and video, we propose a motion word
+            with an <span style=" background: linear-gradient(to top, #67D1E1 50%, transparent 50%)">inflated textual embedding<sup>1</sup></span> 
+            to properly represent the motion in a source video. We also regulate the motion word
+            to attend to proper motion-related areas by introducing a
+            <span style=" background: linear-gradient(to top, #67D1E1 50%, transparent 50%)">novel pseudo optical flow<sup>2</sup></span>,
+            efficiently computed from the pre-calculated attention maps. Finally, we decouple the motion
+            from the appearance of the source video with an 
+            <span style=" background: linear-gradient(to top, #67D1E1 50%, transparent 50%)">additional pseudo word<sup>3</sup></span>. 
+            Extensive experiments demonstrate the editing capability of our method, 
+            taking a step toward more diverse and extensive video editing.
+          </p>
+          <br/>
+          <center>
+          <img src="./static/images/Method_pipeline.png" width="150%">
+          </center>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Inflated Text Embedding. -->
+      <div class="column">
+        <h2 class="title is-3">Method</h2>
+        <br/>
+        <div class="content">
+          <h3 class="title is-4">Inflated Text Embedding<sup>1</sup></h3>
+          <p>
+            We expand the textual embedding space of a motion word to represent a time 
+            flow in videos rather than a frozen moment in images: we add a temporal axis to an embedding space
+            of our new motion word <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span> and 
+            let <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span> inject its information into a proper region in each frame.
+          </p>
+          <h3 class="title is-4">Pre-registration Strategy<sup>3</sup></h3>
+          <p>
+            The motion and the protagonist get easily entangled. To resolve this problem, we propose a two-stage
+            training strategy to untangle the two properties. We newly define a pseudo-word
+            <span style="font-family: 'Cambria Math';">S<sub>pro</sub></span> that represents the appearance and 
+            texture features of the protagonist. As the protagonist and its appearances are already registered 
+            in the text encoder, <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span> can be effectively
+            learned using disentangled motion information for the video.
+          </p>
+        </div>
+      </div>
+      <!--/ Inflated Text Embedding. -->
+
+      <!-- Pseudo Optical Flow. -->
+      <div class="column">
+        <br/>
+        <br/>
+        <br/>
+        <h3 class="title is-4">Pseudo Optical Flow<sup>2</sup></h3>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Our intuition lies on that if the <span style="font-family: 'Cambria Math';">k</span>-th pixel of the 
+              <span style="font-family: 'Cambria Math';">i</span>-th frame and the 
+              <span style="font-family: 'Cambria Math';">l</span>-th pixel of the 
+              <span style="font-family: 'Cambria Math';">j</span>-th frame 
+              have a high spatio-temporal attention score, then they tend to be the same semantic point at different frames. 
+              Therefore, by tracking down spatial locations of these similar points across frames, we can estimate the
+              temporal flow of each pixel in the video. We introduce a novel pseudo optical flow to represent better 
+              the moving area without using the costly optical flow models and enabling <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span>
+              to focus on the movement.
+            </p>
+            <center>
+            <img src="./static/images/Method_motion_map.png" width="80%">
+            </center>
+          </div>
+
+        </div>
+      </div>
+      <!--/ Pseudo Optical Flow. -->
+    </div>
+
+    <!-- Comparison -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Comparison</h2>
+
+        <!-- Motion -->
+        <h3 class="title is-4">Motion reproduction in edited videos</h3>
+        <div class="content has-text-justified">
+          <p>
+            As our method effectively learns the motion of the original protagonist, it generates a new protagonist that reproduces
+            the motion in the source video seamlessly despite having a significantly different structure from that of the original one.
+            Meanwhile, other baselines commonly generate a new protagonist in the silhouette of the original protagonist in the source video
+            and miss the refined movements.
+        </div>
+        <figure>
+          <div style="display: flex; flex-direction: row;">
+            <p style="flex: 1; text-align: center;"> </p>
+            <p style="flex: 1; text-align: center;">Ours</p>
+            <p style="flex: 1; text-align: center;">Tune-A-Video</p>
+            <p style="flex: 1; text-align: center;">Video-P2P</p>
+            <p style="flex: 1; text-align: center;">FateZero</p>
+          </div>
+          <video poster="" id="comp-flower" autoplay controls muted loop playsinline height="40%">
+            <source src="./static/videos/comparisons/cat-flower.mp4"
+                  type="video/mp4">
+          </video>
+          <figcaption><p style="font-size: 25px;">A <strike style="text-decoration-color: rgb(211,47,47);">cat</strike> <span style="color: rgb(211,47,47);">dog</span> is roaring</p></figcaption>
+        </figure>
+        <br/>
+        <figure>
+          <div style="display: flex; flex-direction: row;">
+            <p style="flex: 1; text-align: center;"> </p>
+            <p style="flex: 1; text-align: center;">Ours</p>
+            <p style="flex: 1; text-align: center;">Tune-A-Video</p>
+            <p style="flex: 1; text-align: center;">Video-P2P</p>
+            <p style="flex: 1; text-align: center;">FateZero</p>
+          </div>
+          <video poster="" id="comp-bike" autoplay controls muted loop playsinline height="40%">
+            <source src="./static/videos/comparisons/child-bike.mp4"
+                  type="video/mp4">
+          </video>
+          <figcaption><p style="font-size: 25px;">A <strike style="text-decoration-color: rgb(211,47,47);">child</strike> <span style="color: rgb(211,47,47);">monkey</span> is riding a bike on the road</p></figcaption>
+        </figure>
+
+        <br/>
+        <!--/ Motion -->
+
+        <!-- Appearance -->
+        <h3 class="title is-4">Natural appearance of edited protagonists</h3>
+        <div class="content has-text-justified">
+          <p>
+            Our method also effectively reflects the editing prompts compared to other baselines. Baseline methods are unable to overcome
+            the discrepancy between an original and a new protagonist in the structure and generate an edited video where certain segments maintain 
+            the original protagonist's appearance or some flickered movements exist due to the unstable body structure of the new protagonist across frames.
+            On the other hand, our method disentangles the appearance and the motion with separate
+            <span style="font-family: 'Cambria Math';">S<sub>pro</sub></span> and <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span> and
+            renders the new protagonist doing <span style="font-family: 'Cambria Math';">S<sub>mot</sub></span> from the text encoder from the start,
+            successfully applying the motion features to the new protagonist.
+          </p>
+        </div>
+        <figure>
+          <div style="display: flex; flex-direction: row;">
+            <p style="flex: 1; text-align: center;"> </p>
+            <p style="flex: 1; text-align: center;">Ours</p>
+            <p style="flex: 1; text-align: center;">Tune-A-Video</p>
+            <p style="flex: 1; text-align: center;">Video-P2P</p>
+            <p style="flex: 1; text-align: center;">FateZero</p>
+          </div>
+          <video poster="" id="comp-sun" autoplay controls muted loop playsinline height="40%">
+            <source src="./static/videos/comparisons/cat-in-the-sun.mp4"
+                  type="video/mp4">
+          </video>
+          <figcaption><p style="font-size: 25px;">A <strike style="text-decoration-color: rgb(211,47,47);">cat</strike> <span style="color: rgb(211,47,47);">Pikachu</span> is sleeping in the grass in the sun</p></figcaption>
+        </figure>
+        <br/>
+        <figure>
+          <div style="display: flex; flex-direction: row;">
+            <p style="flex: 1; text-align: center;"> </p>
+            <p style="flex: 1; text-align: center;">Ours</p>
+            <p style="flex: 1; text-align: center;">Tune-A-Video</p>
+            <p style="flex: 1; text-align: center;">Video-P2P</p>
+            <p style="flex: 1; text-align: center;">FateZero</p>
+          </div>
+          <video poster="" id="comp-skiing" autoplay controls muted loop playsinline height="40%">
+            <source src="./static/videos/comparisons/man-skiing.mp4"
+                  type="video/mp4">
+          </video>
+          <figcaption><p style="font-size: 25px;">A <strike style="text-decoration-color: rgb(211,47,47);">man</strike> <span style="color: rgb(211,47,47);">tiger</span> is skiing</p></figcaption>
+        </figure>
+        <!--/ Appearance -->
+
+      </div>
+    </div>
+    <!--/ Comparison -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{song2023save,
+      title={SAVE: Protagonist Diversification with Structure Agnostic Video Editing}, 
+      author={Yeji Song and Wonsik Shin and Junsoo Lee and Jeesoo Kim and Nojun Kwak},
+      year={2023},
+      eprint={2312.02503},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <!--
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website is adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
