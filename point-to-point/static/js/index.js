@@ -30,9 +30,9 @@ $(document).ready(function() {
     });
 
     var options = {
-			slidesToScroll: 4,
-			slidesToShow: 4,
-			loop: false,
+			slidesToScroll: 6,
+			slidesToShow: 6,
+			loop: true,
 			infinite: false,
 			autoplay: false,
 			autoplaySpeed: 3000,
