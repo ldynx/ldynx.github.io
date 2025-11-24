@@ -169,8 +169,8 @@ figcaption {
 }
 
 .video-row video {
-  width: 200px; /* or a fixed pixel value, e.g. 300px */
-  height: auto; /*200px;
+  width: auto; /* or a fixed pixel value, e.g. 300px */
+  height: 200px; /*200px;
 }
 
 .video-row-content {
