@@ -7,7 +7,7 @@
     - We enhanced point-based video editing by introducing a new motion representation that leverages the priors of a video diffusion model.
   project_page: "https://ldynx.github.io/point-to-point/"
   arxiv: 2403.14155
-  image: point-to-point.mp4
+  image: point_to_point.png
   authors:
     - yeji
     - jaehyun
