@@ -266,16 +266,17 @@
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
           <p>
-            Accurately preserving motion while editing a subject remains a core challenge in video editing tasks. 
-            Existing methods often face a trade-off between edit and motion fidelity, as they rely on motion representations 
-            that are either overfitted to the layout or only implicitly defined. To overcome this limitation, 
-            we revisit point-based motion representation. However, identifying meaningful points remains challenging without
-            human input, especially across diverse video scenarios. To address this, we propose a novel motion representation, 
-            anchor tokens, that capture the most essential motion patterns by leveraging the rich prior of a video diffusion model. 
-            Anchor tokens encode video dynamics compactly through a small number of informative point trajectories and can be flexibly
-            relocated to align with new subjects. This allows our method, Point-to-Point, to generalize across diverse scenarios. 
-            Extensive experiments demonstrate that anchor tokens lead to more controllable and semantically aligned video edits, 
-            achieving superior performance in terms of edit and motion fidelity.
+            First, we define <b>motion tokens</b>, which are a set of extracted features using a video diffusion model. 
+            In contrast to prior works (Geyer et al. 2024; Wang et al. 2024a), where features (often referred to as “tokens") are independently extracted
+            from each latent pixel in every frame, we track those tokens across frames and obtain distinct motion trajectories to extract
+            more representative features of motion dynamics. 
+            From this set, we select a subset of anchor tokens that represent the most informative motion patterns in the video. 
+            Each anchor token captures a distinct local motion, and together they form a comprehensive summary of the overall motion dynamics.
+            <br/>
+            Meanwhile, the new subject in the edited video may not align well with the anchor tokens extracted from the source video. 
+            To address this, we adjust the anchor tokens to better match the new layout by matching each anchor token to the 
+            motion tokens in the edited video whose feature is most similar. 
+            Then, we relocate each anchor token to its corresponding position.
           </p>
           <br/>
           <div class="column is-centered has-text-centered">
