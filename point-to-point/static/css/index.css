@@ -173,3 +173,21 @@ figcaption {
   width: auto; /* or a fixed pixel value, e.g. 300px */
   height: 300px;
 }
+
+.video-row-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;           /* space between videos */
+  justify-content: center; /* optional: center videos */
+  align-items: flex-start; /* optional: align videos at the top */
+  flex-wrap: wrap;     /* allows wrapping if too many videos */
+  width: 100%;         /* full page width */
+  box-sizing: border-box;
+}
+
+.video-row-content video {
+  width: 22%;          /* 4 videos x 22% + gaps ≈ 100% */
+  height: auto;        /* maintain aspect ratio */
+  min-width: 150px;    /* optional: minimum size */
+  max-width: 300px;    /* optional: maximum size */
+}
