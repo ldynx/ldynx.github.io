@@ -162,17 +162,16 @@ figcaption {
   border-radius: 5px;
 }
 
-/* .video-row {
+.video-row {
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* or center */
-  /* gap: 5px; /* space between videos */ */
+  align-items: center; /* or center */
 }
 
 .video-row video {
   width: auto; /* or a fixed pixel value, e.g. 300px */
   height: 200px;
-} */
+}
 
 .video-row-content {
   display: flex;
