@@ -6,7 +6,8 @@
 - company: Meta
   position: Research Scientist Intern
   description:
-    - Research on building efficient image generation model.
+    - Developing methods to improve efficiency of image editing models by selecting semantically meaningful tokens.
+    - Establishing an end-to-end approach using lightweight MLPs based on Flux models.
   dates: "Aug 2025 - Jan 2026"
   location: Seattle, WA
 
