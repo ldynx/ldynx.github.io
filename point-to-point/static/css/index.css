@@ -186,8 +186,8 @@ figcaption {
 }
 
 .video-row-content video {
-  width: 22%;          /* 4 videos x 22% + gaps ≈ 100% */
-  height: auto;        /* maintain aspect ratio */
+  width: auto;          /* 4 videos x 22% + gaps ≈ 100% */
+  height: 200px;        /* maintain aspect ratio */
   min-width: 150px;    /* optional: minimum size */
   max-width: 300px;    /* optional: maximum size */
 }
