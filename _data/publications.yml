@@ -91,24 +91,6 @@
     - njkwak
   cv: True
 
-- id: cf-nsg
-  tag: Image & Video Generation
-  label: "[G]"
-  title: "Towards Efficient Neural Scene Graphs by Learning Consistency Fields"
-  venue: BMVC, 2022
-  description: 
-    - In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation.
-  arxiv: 2210.04127
-  image: cf_nsg.png
-  image_mouseover: cf_nsg.mp4
-  authors:
-    - yeji
-    - chaerin
-    - seoyoung
-    - njkwak*
-    - jslee*
-  cv: True
-
 - id: text-detection
   tag: Safe Generative Models
   label: "[S]"
@@ -141,6 +123,24 @@
     - kiyoon
     - njkwak
   cv: False
+
+- id: cf-nsg
+  tag: Image & Video Generation
+  label: "[G]"
+  title: "Towards Efficient Neural Scene Graphs by Learning Consistency Fields"
+  venue: BMVC, 2022
+  description: 
+    - In video scene rendering, we reformulate neural radiance fields to additionally consider consistency fields, enabling more efficient and controllable scene manipulation.
+  arxiv: 2210.04127
+  image: cf_nsg.png
+  image_mouseover: cf_nsg.mp4
+  authors:
+    - yeji
+    - chaerin
+    - seoyoung
+    - njkwak*
+    - jslee*
+  cv: True
 
 - id: md3d
   tag: Object Detection
