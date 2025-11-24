@@ -176,7 +176,7 @@ figcaption {
 .video-row-content {
   display: flex;
   flex-direction: row;
-  gap: 10px;           /* space between videos */
+  /* gap: 10px;           /* space between videos */ */
   justify-content: center; /* optional: center videos */
   align-items: flex-start; /* optional: align videos at the top */
   flex-wrap: wrap;     /* allows wrapping if too many videos */
