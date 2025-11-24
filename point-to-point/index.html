@@ -266,17 +266,16 @@
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
           <p>
-            First, we define <b>motion tokens</b>, which are a set of extracted features using a video diffusion model. 
+            1) First, we define <b>motion tokens</b>, which are a set of extracted features using a video diffusion model. 
             In contrast to prior works (Geyer et al. 2024; Wang et al. 2024a), where features (often referred to as “tokens") are independently extracted
             from each latent pixel in every frame, we track those tokens across frames and obtain distinct motion trajectories to extract
             more representative features of motion dynamics. 
             From this set, we select a subset of anchor tokens that represent the most informative motion patterns in the video. 
             Each anchor token captures a distinct local motion, and together they form a comprehensive summary of the overall motion dynamics.
             <br/>
-            Meanwhile, the new subject in the edited video may not align well with the anchor tokens extracted from the source video. 
-            To address this, we adjust the anchor tokens to better match the new layout by matching each anchor token to the 
-            motion tokens in the edited video whose feature is most similar. 
-            Then, we relocate each anchor token to its corresponding position.
+            2) Meanwhile, the new subject in the edited video may not align well with the anchor tokens extracted from the source video. 
+            To address this, we <b>adjust the anchor tokens</b> to better match the new layout by matching each anchor token to the 
+            motion tokens in the edited video whose feature is most similar. Then, we relocate each anchor token to its corresponding position.
           </p>
           <br/>
           <div class="column is-centered has-text-centered">
