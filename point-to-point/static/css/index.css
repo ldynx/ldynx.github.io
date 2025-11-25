@@ -144,11 +144,18 @@ figcaption {
   overflow: hidden;
 }
 
-.results-carousel .item,
+.video-row, .results-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* .results-carousel .item,
 
 .results-carousel video {
   margin: 0;
-}
+} */
 
 .interpolation-panel {
   background: #f5f5f5;
