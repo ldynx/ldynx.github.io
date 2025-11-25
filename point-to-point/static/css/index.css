@@ -140,6 +140,7 @@ figcaption {
   align-items: center;
   justify-content: center;
   width: 80%;
+  margin: 0 auto;
   height: 250px;
   overflow: hidden;
 }
