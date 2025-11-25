@@ -220,20 +220,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-fifth-fifths">
         <h2 class="title is-3">Motivation</h2>
-        <div class="content has-text-justified">
-          <p>
-            Signal-based methods extract and leverage an explicit motion signal from the source video, 
-            whereas adaptation-based methods embed motion implicitly in the model or latent space,
-            optimizing those representations on the source video. 
-            Point-based methods guide the motion using semantic points and their trajectory. 
-            Despite their respective strengths, all three approaches struggle to satisfy the requirements above. 
-            Signal-based methods overfit to the spatial layout of the source video, often compromising edit fidelity. 
-            Adaptation-based methods often struggle to capture precise motion dynamics, leading to low motion fidelity.
-            Point-based methods require manual annotations, resulting in degraded edit and motion fidelity when points are inaccurate.
-            To address these challenges, we propose novel, fully-automated and motion-aligned points.
-          </p>
-          <br/>
-        </div>
+        
         <figure class="video-row-content" style="display: flex; flex-direction: row; gap: 16px;">
           <div style="flex: 1; text-align: center;">
             <div style="margin-bottom: 4px; font-weight: bold;"> Source Video </div>
@@ -262,6 +249,21 @@
             </video>
           </div>
         </figure>
+
+        <div class="content has-text-justified">
+          <p>
+            Signal-based methods extract and leverage an explicit motion signal from the source video, 
+            whereas adaptation-based methods embed motion implicitly in the model or latent space,
+            optimizing those representations on the source video. 
+            Point-based methods guide the motion using semantic points and their trajectory. 
+            Despite their respective strengths, all three approaches struggle to satisfy the requirements above. 
+            Signal-based methods overfit to the spatial layout of the source video, often compromising edit fidelity. 
+            Adaptation-based methods often struggle to capture precise motion dynamics, leading to low motion fidelity.
+            Point-based methods require manual annotations, resulting in degraded edit and motion fidelity when points are inaccurate.
+            To address these challenges, we propose novel, fully-automated and motion-aligned points.
+          </p>
+          <br/>
+        </div>
       </div>
     </div>
     <!--/ Motivation -->
